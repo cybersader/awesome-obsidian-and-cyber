@@ -1,0 +1,19 @@
+> This is an incredibly rough draft of things to put into here as a placeholder
+
+- Cybersecurity-specific Obsidian plugins
+- Using Obsidian for Personal
+  - Examples
+  - https://cybersader.com/%F0%9F%93%81+51+-+Cyberbase/Cyberbase+Development/Cyberbase+Development
+  - cybersader.com - my personal website that uses it
+    - https://github.com/cybersader/cyberbase
+- Using Obsidian for corporate
+  - https://cybersader.com/corporate-obsidian
+  - Obsidian risks in corporate and mitigations
+  - https://cybersader.com/obsidian-in-browser
+- Obsidian for education
+  - Model scenarios in Obsidian
+- Using Obsidian for cyber community and knowledge sharing - modern Wikipedia
+  - Contributable Obsidian wiki
+- Knowledge platforms and cyber
+  - Organizing knowledge related to cyber - unique problems and solutions for this
+- Alternative tools - not Obsidian
