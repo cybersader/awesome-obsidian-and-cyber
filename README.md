@@ -10,6 +10,7 @@
   - https://cybersader.com/corporate-obsidian
   - Obsidian risks in corporate and mitigations
   - https://cybersader.com/obsidian-in-browser
+  - Using Obsidian for IR and knowledge sharing for responders
 - Obsidian for education
   - Model scenarios in Obsidian
 - Using Obsidian for cyber community and knowledge sharing - modern Wikipedia
