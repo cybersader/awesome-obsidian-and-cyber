@@ -1,5 +1,6 @@
 > This is an incredibly rough draft of things to put into here as a placeholder
 
+- Obsidian web clipper templates
 - Obsidian templates
   - https://github.com/cybersader/obsidian-secops-vault-template - corporate-type template in progress
 - Cybersecurity-specific Obsidian plugins
