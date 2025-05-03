@@ -1,5 +1,7 @@
 > This is an incredibly rough draft of things to put into here as a placeholder
 
+- Obsidian templates
+  - https://github.com/cybersader/obsidian-secops-vault-template - corporate-type template in progress
 - Cybersecurity-specific Obsidian plugins
 - Using Obsidian for Personal
   - Examples
@@ -18,3 +20,6 @@
 - Knowledge platforms and cyber
   - Organizing knowledge related to cyber - unique problems and solutions for this
 - Alternative tools - not Obsidian
+- Using Notion and Obsidian
+  - https://github.com/cybersader/notion-to-obsidian-github-sync
+  - 
