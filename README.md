@@ -5,7 +5,7 @@
 
 <!-- below TOC uses https://github.com/marketplace/actions/toc-generator -->
 <!-- START doctoc -->
-<!-- param::isNotitle::true:: -->
+<!-- param::MAX_HEADER_LEVEL::3:: -->
 <!-- END doctoc -->
 
 ---
