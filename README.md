@@ -4,9 +4,51 @@
 > This is an incredibly rough draft of things to put into here as a placeholder
 
 <!-- below TOC uses https://github.com/marketplace/actions/toc-generator -->
-<!-- START doctoc -->
-<!-- param::MAX_HEADER_LEVEL::3:: -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Working Group](#working-group)
+  - [Current Projects, Ideas, Tasks](#current-projects-ideas-tasks)
+    - [Tasks](#tasks)
+    - [Projects](#projects)
+- [General Obsidian & Workflow](#general-obsidian--workflow)
+  - [0) Obsidian Starters & Templates](#0-obsidian-starters--templates)
+    - [Starter Vaults](#starter-vaults)
+      - [(Starter Vaults) Corporate, Enterprise](#starter-vaults-corporate-enterprise)
+      - [(Starter Vaults) Personal Branding](#starter-vaults-personal-branding)
+      - [(Starter Vaults) Community Vault](#starter-vaults-community-vault)
+      - [(Starter Vaults) Mobile Vaults](#starter-vaults-mobile-vaults)
+  - [1) Core Activities](#1-core-activities)
+    - [1.1) Knowledge Capture](#11-knowledge-capture)
+    - [1.2) Knowledge Work](#12-knowledge-work)
+    - [1.3) Knowledge Sharing & Output](#13-knowledge-sharing--output)
+  - [2) Organizing Cyber-Related Knowledge & Information](#2-organizing-cyber-related-knowledge--information)
+  - [3) Obsidian Plugins](#3-obsidian-plugins)
+- [By Solution](#by-solution)
+  - [Task management](#task-management)
+  - [GRC](#grc)
+  - [IR](#ir)
+  - [Awareness](#awareness)
+  - [SecOps](#secops)
+  - [Application Security](#application-security)
+  - [Penetration](#penetration)
+- [Obsidian Technicals](#obsidian-technicals)
+- [Using Obsidian for...](#using-obsidian-for)
+  - [for Corporate, Enterprise](#for-corporate-enterprise)
+  - [for Community](#for-community)
+  - [for Personal Branding](#for-personal-branding)
+  - [for Family, Personal, Partners, Friends](#for-family-personal-partners-friends)
+  - [for Education](#for-education)
+- [Opinionated Additional Tools](#opinionated-additional-tools)
+  - [Obsidian Tools](#obsidian-tools)
+  - [Browser](#browser)
+  - [Core Windows](#core-windows)
+  - [Core Mac](#core-mac)
+- [Obsidian Plugin Development](#obsidian-plugin-development)
+- [Other Knowledge Platforms (Wiki, KMS, Notetaking)](#other-knowledge-platforms-wiki-kms-notetaking)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
