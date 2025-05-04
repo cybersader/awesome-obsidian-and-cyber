@@ -7,7 +7,7 @@
 
 ## Current Projects & Ideas
 
-<u>Easy:<u/>
+ Easy: 
 
 - Starter vaults for for SecOps, couple/family productivity, personal branding, GRC, and more
 - Test Obsidian plugins with application firewall to watch traffic
