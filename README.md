@@ -9,7 +9,7 @@
 
 <u>Easy:<u/>
 
-- Templates for SecOps, couple vault, personal branding, GRC, and more
+- Starter vaults for for SecOps, couple/family productivity, personal branding, GRC, and more
 - Test Obsidian plugins with application firewall to watch traffic
 - Curate Obsidian plugins
 - Curate workflows, examples, and user stories
