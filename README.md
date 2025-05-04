@@ -3,12 +3,11 @@
 
 > This is an incredibly rough draft of things to put into here as a placeholder
 
-1. [Table of Contents](#table-of-contents)
-2. [Working Group](#working-group)
+1. [Working Group](#working-group)
 	1. [Current Projects, Ideas, Tasks](#current-projects-ideas-tasks)
 		1. [Tasks](#tasks)
 		2. [Projects](#projects)
-3. [General Obsidian & Workflow](#general-obsidian--workflow)
+2. [General Obsidian & Workflow](#general-obsidian--workflow)
 	1. [0) Obsidian Starters & Templates](#0-obsidian-starters--templates)
 		1. [Starter Vaults](#starter-vaults)
 	2. [1) Core Activities](#1-core-activities)
@@ -16,7 +15,8 @@
 		2. [1.2) Knowledge Work](#12-knowledge-work)
 		3. [1.3) Knowledge Sharing & Output](#13-knowledge-sharing--output)
 	3. [2) Organizing Cyber-Related Knowledge & Information](#2-organizing-cyber-related-knowledge--information)
-4. [By Solution - Cybersecurity, GRC, DFIR](#by-solution---cybersecurity-grc-dfir)
+	4. [3) Obsidian Plugins](#3-obsidian-plugins)
+3. [By Solution - Cybersecurity, GRC, DFIR](#by-solution---cybersecurity-grc-dfir)
 	1. [Task management](#task-management)
 	2. [GRC](#grc)
 	3. [IR](#ir)
@@ -24,20 +24,21 @@
 	5. [SecOps](#secops)
 	6. [Application Security](#application-security)
 	7. [Penetration](#penetration)
-5. [Obsidian Technicals](#obsidian-technicals)
-6. [Using Obsidian for...](#using-obsidian-for)
+4. [Obsidian Technicals](#obsidian-technicals)
+5. [Using Obsidian for...](#using-obsidian-for)
 	1. [for Corporate, Enterprise](#for-corporate-enterprise)
 	2. [for Community](#for-community)
 	3. [for Personal Branding](#for-personal-branding)
 	4. [for Family, Personal, Partners, Friends](#for-family-personal-partners-friends)
 	5. [for Education](#for-education)
-7. [Opinionated Additional Tools](#opinionated-additional-tools)
+6. [Opinionated Additional Tools](#opinionated-additional-tools)
 	1. [Obsidian Tools](#obsidian-tools)
 	2. [Browser](#browser)
 	3. [Core Windows](#core-windows)
 	4. [Core Mac](#core-mac)
-8. [Obsidian Plugin Development](#obsidian-plugin-development)
-9. [Other Knowledge Platforms (Wiki, KMS, Notetaking)](#other-knowledge-platforms-wiki-kms-notetaking)
+7. [Obsidian Plugin Development](#obsidian-plugin-development)
+8. [Other Knowledge Platforms (Wiki, KMS, Notetaking)](#other-knowledge-platforms-wiki-kms-notetaking)
+
 
 ---
 
