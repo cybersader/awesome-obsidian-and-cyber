@@ -7,7 +7,7 @@
 
 ## Current Projects & Ideas
 
-Easy:
+<u>Easy:<u/>
 
 - Templates for SecOps, couple vault, personal branding, GRC, and more
 - Test Obsidian plugins with application firewall to watch traffic
