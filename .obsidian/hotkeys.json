@@ -6,5 +6,21 @@
       ],
       "key": "`"
     }
+  ],
+  "obsidian-text-format:wrapper:underline": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "U"
+    }
+  ],
+  "obsidian-plugin-toc:create-toc": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
   ]
 }
