@@ -3,7 +3,7 @@
 
 # Working Group
 
-- if you would like to join the working group than contact me at cal.com/cybersader 
+- if you would like to join the working group than contact me at https://cal.com/cybersader 
 
 ## Current Projects & Ideas
 
