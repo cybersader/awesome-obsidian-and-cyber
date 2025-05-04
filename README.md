@@ -1,6 +1,36 @@
 > This is an incredibly rough draft of things to put into here as a placeholder
 
-# General
+
+# Working Group
+
+- if you would like to join the working group than contact me at cal.com/cybersader 
+
+## Current Projects & Ideas
+
+Easy:
+
+- Templates for SecOps, couple vault, personal branding, GRC, and more
+- Test Obsidian plugins with application firewall to watch traffic
+- Curate Obsidian plugins
+- Curate workflows, examples, and user stories
+
+Medium:
+
+> With time, you can solve some of these with AI.  They just take awhile
+
+- Plugin to map/sync folders and tags (multiple hierarchies so we aren't limited by folders)
+- Crosswalker - convert frameworks into Obsidian notes
+- Frameworker - obsidian plugins or workflow to define metadata per framework <-> obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database
+
+Hard / Seasoned-Developer / Pentester:
+
+- Test risks of Obsidian application
+- Fix SMB share and other problems by implementing CRDT-based reconciler for file system like OneNote uses.  Conflict handling for multiple user situations like corporate without needing to go to a block-baswd system like Notion
+- User management layer on-top of browser-based Obsidian (linuxserver container like what KASM workspaces uses).  This would make Enterprise use with Obsidian possible (collaboration and accessibility with security)
+
+---
+
+# General Obsidian & Workflow
 
 ## 0) Obsidian Starters & Templates
 
@@ -8,46 +38,151 @@
 	- https://github.com/cybersader/obsidian-secops-vault-template - corporate-type template in progress
 
 ## 1) Core Activities
-### Knowledge Capture
+
+### 1.1) Knowledge Capture
 
 - Obsidian web clipper templates
-### Knowledge Work
+- Useful ancillary tools, platforms, workflows
+
+### 1.2) Knowledge Work
 
 - Cybersecurity-specific Obsidian plugins
 - Knowledge platforms and cyber
 	- Organizing knowledge related to cyber - unique problems and solutions for this
-### Knowledge Sharing & Output
+
+### 1.3) Knowledge Sharing & Output
 
 - Obsidian Publish templates
 - Using GitHub for community wiki and contributions
 
-## 2) 
-# Knowledge Organization
+## 2) Organizing Cyber-Related Knowledge & Information
 
-- SEACOW(r)
-- PARA
-# Using Obsidian in...
+> These are example taxonomies that can be used or modified to organize knowledge or information around particular subjects.
 
-## Corporate, Enterprise
+- SEACOW(r) - a meta framework for organizing knowledge platforms
+- PARA - a folder structure oriented towards what is actionable vs non-actionable knowledge
+- Zettelkasten - writer and research focused workflow or approach
+- LATCH
+- ACE
+- ARCO
+- STIR
+
+---
+
+# By Solution - Cybersecurity, GRC, DFIR
+
+## Task management
+
+- do individual task management in obsidian and escalate to longer term tasks and project MGMT tooling when necessary
+
+## GRC
+
+- map frameworks as notes in obsidian and turn Obsidian into your core evidence mapping and risk management platform.  Store your evidence/knowledge right alongside the frameworks you map to
+- set up automations alongside your vault
+- Use Obsidian to help other understand how to organize files
+
+## IR
+
+- Set up a backup vault using obsidian Publish or sync with a password that the CISO or chief security related officer only has access to
+- Give responders access to the vault to help onboard, see playbooks, and quickly become valuable during the event
+
+## Awareness
+
+- set up games via the education section below for awareness or training
+
+## SecOps
+
+- set up your core working, wiki, and knowledge management environment in Obsidian and collaborate in real time.  this part is hard but game changing
+- Store tutorials and document 
+- replace using OneDrive or file explorer for working with knowledge content and notes and docs
+
+## Application Security
+
+- make program documentation in Obsidian and format to work with GitHub
+
+## Penetration
+
+- streamline test reporting and documentation
+- organize pen testing knowledge for easier sharing and collaboration 
+
+--- 
+
+# Obsidian Technicals
+
+> these are relevant to corporate and to threat model the system
+
+- Browser-based Obsidian
+- Collaboration in Obsidian
+- Plugin risks and security
+- Securing Obsidian Application (network)
+- Obsidian vendor philosophy
+- Using application firewall with Obsidian
+
+---
+
+# Using Obsidian for...
+
+## for Corporate, Enterprise
 
 - https://cybersader.com/corporate-obsidian
 - Obsidian risks in corporate and mitigations
 - https://cybersader.com/obsidian-in-browser
 - Using Obsidian for IR and knowledge sharing for responders
+- Limitations of using SMB shares
 
-## Community
+## for Community
 
 - Using Obsidian for cyber community and knowledge sharing - modern Wikipedia
-	- Contributable Obsidian wiki
-## Personal
+- Contributable Obsidian wiki
+
+## for Personal Branding
 
 - Examples
 	- https://cybersader.com/%F0%9F%93%81+51+-+Cyberbase/Cyberbase+Development/Cyberbase+Development
 	- cybersader.com - my personal website that uses it
 	    - https://github.com/cybersader/cyberbase
 
+## for Family, Personal, Partners, Friends
+
+- couple vault template
+
+## for Education
+
+- cynario builder using obsidian, obsidian Publish, or link compatible platforms
+- education templates
+
+---
+
+# Opinionated Additional Tools
+
+## Obsidian Tools
+
+- .
+
+## Browser
+
+- .
+
+## Core Windows 
+
+- .
+
+## Core Mac 
+
+- .
+
+---
+
+# Obsidian Plugin Development
+
+- workflow and tooling
+
+---
+
 # Other Knowledge Platforms (Wiki, KMS, Notetaking)
 
 - Alternative tools - not Obsidian
 - Using Notion and Obsidian
 	- https://github.com/cybersader/notion-to-obsidian-github-sync
+- Affine, Appflowy, Trillium, etc.
+- Comparisons for cyber
