@@ -1,10 +1,10 @@
 on: push
-name: DSL TOC Action
-
+name: TOC Generator
 jobs:
-  doDOCTOC:
+  generateTOC:
+    name: TOC Generator
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: "Call DOCTOC_action"
-        uses: DougLeonard/DOCTOC_action@v1      
+      - uses: technote-space/toc-generator@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}

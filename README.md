@@ -3,6 +3,11 @@
 
 > This is an incredibly rough draft of things to put into here as a placeholder
 
+<!-- below TOC uses https://github.com/marketplace/actions/toc-generator -->
+<!-- START doctoc -->
+<!-- param::isNotitle::true:: -->
+<!-- END doctoc -->
+
 ---
 
 # Working Group

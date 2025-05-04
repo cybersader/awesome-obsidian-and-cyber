@@ -12,7 +12,7 @@
 > if you feel like playing around with any of these on a PR (pull request)
 
 - May be useful for generating table of contents
-	- [github.com > TOC Generator - GitHub Marketplace](https://github.com/marketplace/actions/toc-generator)
+	- [github.com > TOC Generator - GitHub Marketplace](https://github.com/marketplace/actions/toc-generator) - Currently using this one
 	- [github.com > md-toc-action - GitHub Marketplace](https://github.com/marketplace/actions/md-toc-action)
 	- [github.com > DOCTOC Action - GitHub Marketplace](https://github.com/marketplace/actions/doctoc-action)
 	- [github.com > Markdown auto catalog · Actions · GitHub Marketplace](https://github.com/marketplace/actions/markdown-auto-catalog)
