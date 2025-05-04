@@ -16,7 +16,7 @@
 		3. [1.3) Knowledge Sharing & Output](#13-knowledge-sharing--output)
 	3. [2) Organizing Cyber-Related Knowledge & Information](#2-organizing-cyber-related-knowledge--information)
 	4. [3) Obsidian Plugins](#3-obsidian-plugins)
-3. [By Solution - Cybersecurity, GRC, DFIR](#by-solution---cybersecurity-grc-dfir)
+3. [By Solution](#by-solution)
 	1. [Task management](#task-management)
 	2. [GRC](#grc)
 	3. [IR](#ir)
@@ -150,7 +150,7 @@ Check the `Projects` tab for current tasks.
 
 ---
 
-# By Solution - Cybersecurity, GRC, DFIR
+# By Solution
 
 ## Task management
 

@@ -1,0 +1,10 @@
+on: push
+name: DSL TOC Action
+
+jobs:
+  doDOCTOC:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Call DOCTOC_action"
+        uses: DougLeonard/DOCTOC_action@v1      
