@@ -1,20 +1,40 @@
+---
+---
+
 > This is an incredibly rough draft of things to put into here as a placeholder
 
+<!-- toc -->
 
 # Working Group
 
 - if you would like to join the working group than contact me at https://cal.com/cybersader 
 
-## Current Projects & Ideas
+## Current Projects, Ideas, Tasks
 
- Easy: 
+### Tasks
+
+Check the `Projects` tab for current tasks.
+
+Curated tasks from this README:
+<!-- QueryToSerialize: LIST WITHOUT ID t.text FLATTEN file.tasks AS t WHERE file.name = this.file.name -->
+<!-- SerializedQuery: LIST WITHOUT ID t.text FLATTEN file.tasks AS t WHERE file.name = this.file.name -->
+- start GRC template repo ➕ 2025-05-04
+
+- Add "cyberbase" starter (need to make a repo for this) ➕ 2025-05-04
+- Develop a community vault repo ➕ 2025-05-04
+- Need to do more testing to build a good mobile vault that is performant, has good buttons, etc. ➕ 2025-05-04
+<!-- SerializedQuery END -->
+
+### Projects
+
+**Easy:** 
 
 - Starter vaults for for SecOps, couple/family productivity, personal branding, GRC, and more
 - Test Obsidian plugins with application firewall to watch traffic
 - Curate Obsidian plugins
 - Curate workflows, examples, and user stories
 
-Medium:
+**Medium:**
 
 > With time, you can solve some of these with AI.  They just take awhile
 
@@ -22,7 +42,7 @@ Medium:
 - Crosswalker - convert frameworks into Obsidian notes
 - Frameworker - obsidian plugins or workflow to define metadata per framework <-> obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database
 
-Hard / Seasoned-Developer / Pentester:
+**Hard / Seasoned-Developer / Pentester:**
 
 - Test risks of Obsidian application
 - Fix SMB share and other problems by implementing CRDT-based reconciler for file system like OneNote uses.  Conflict handling for multiple user situations like corporate without needing to go to a block-baswd system like Notion
@@ -34,8 +54,27 @@ Hard / Seasoned-Developer / Pentester:
 
 ## 0) Obsidian Starters & Templates
 
-- Obsidian templates
-	- https://github.com/cybersader/obsidian-secops-vault-template - corporate-type template in progress
+### Starter Vaults
+
+#### (Starter Vaults) Corporate, Enterprise
+
+- [github.com > cybersader/obsidian-secops-vault-template](https://github.com/cybersader/obsidian-secops-vault-template) - corporate template in progress
+- [ ] start GRC template repo ➕ 2025-05-04
+	
+
+#### (Starter Vaults) Personal Branding
+
+- [github.com > cybersader/cyberbase: My public and contributable base/wiki/digital garden for cybersecurity](https://github.com/cybersader/cyberbase) - my live vault that I use as a website
+
+- [ ] Add "cyberbase" starter (need to make a repo for this) ➕ 2025-05-04
+
+#### (Starter Vaults) Community Vault
+
+- [ ] Develop a community vault repo ➕ 2025-05-04
+
+#### (Starter Vaults) Mobile Vaults
+
+- [ ] Need to do more testing to build a good mobile vault that is performant, has good buttons, etc. ➕ 2025-05-04
 
 ## 1) Core Activities
 
