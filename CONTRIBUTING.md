@@ -6,7 +6,8 @@
 ## Resources for working w/README.md
 
 - [github.com > Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#custom-anchors)
-
+- [github.com > Autolinked references and URLs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)
+- 
 ## GitHub Actions
 
 > if you feel like playing around with any of these on a PR (pull request)

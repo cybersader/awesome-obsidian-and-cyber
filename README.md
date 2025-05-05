@@ -1,7 +1,46 @@
----
----
 
-> This is an incredibly rough draft of things to put into here as a placeholder
+
+<!-- Top‑of‑README Header -->
+<div align="center">
+  <h1>Awesome Obsidian &amp; Cyber</h1>
+  <em>innovating knowledge work in cyberspace</em>
+</div>
+
+<!-- Badge Bar -->
+<p align="center">
+   <img height=20 width=auto src="https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff&style=flat-square" alt="Notion Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=fff&style=flat-square" alt="Obsidian Badge"> 
+   <img height=20 width=auto src="https://img.shields.io/github/contributors/cybersader/awesome-obsidian-and-cyber.svg" alt="Contributors">  
+  <!-- Curated list badge -->
+  <img width="auto" height="20" src="https://img.shields.io/badge/📦-Curated-blue?style=for-the-badge" alt="Curated" />
+  <!-- Awesome‑List spec version -->
+  <img width="auto" height="20" src="https://img.shields.io/badge/Awesome_List-v1.0-brightgreen?style=for-the-badge" alt="Awesome List v1.0" />
+  <!-- Stars & Forks -->
+  <img width="auto" height="20" src="https://img.shields.io/github/stars/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="GitHub stars" />
+  <img width="auto" height="20" src="https://img.shields.io/github/forks/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="GitHub forks" />
+  <!-- Issues & PRs -->
+  <img width="auto" height="20" src="https://img.shields.io/github/issues/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Open Issues" />
+  <img width="auto" height="20" src="https://img.shields.io/github/issues-pr/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Open PRs" />
+  <!-- Commit Activity -->
+  <img width="auto" height="20" src="https://img.shields.io/github/commit-activity/m/cybersader/awesome-obsidian-and-cyber?style=flat-square&label=commits/week" alt="Commits per Week" />
+  <!-- Language & Code Size -->
+  <img width="auto" height="20" src="https://img.shields.io/github/languages/top/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Top Language" />
+  <!-- Last Updated & License -->
+  <img width="auto" height="20" src="https://img.shields.io/github/last-commit/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Last Commit" />
+  <img width="auto" height="20" src="https://img.shields.io/github/license/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="License" />
+  <!-- Community & Engagement -->
+  <img width="auto" height="20" src="https://img.shields.io/github/discussions/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Discussions" />
+  <img width="auto" height="20" src="https://img.shields.io/badge/comments-Giscus-000?style=flat-square&logo=giscus&logoColor=white" alt="Giscus Comments" />
+  <img width="auto" height="20" src="https://img.shields.io/badge/comments-Utterances-white?style=flat-square&logo=github&logoColor=black" alt="Utterances Comments" />
+  <!-- Social & Sponsors -->
+  <img width="auto" height="20" src="https://img.shields.io/badge/Join_Discord-7289DA?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
+  <img width="auto" height="20" src="https://img.shields.io/twitter/follow/cybersader?style=flat-square&logo=twitter&logoColor=white" alt="Twitter Follow" />
+  <img width="auto" height="20" src="https://img.shields.io/github/sponsors/cybersader?style=flat-square" alt="Sponsors" />
+  <!-- Visitor Count -->
+  <img width="auto" height="20" src="https://visitor-badge.laobi.icu/badge?page_id=cybersader.awesome-obsidian-and-cyber" alt="Visitor Badge" />
+  <!-- Custom Fun Badges -->
+  <img width="auto" height="20" src="https://img.shields.io/badge/🚀-Curated_with_Passion-lightgrey?style=for-the-badge" alt="Curated with Passion" />
+  <img width="auto" height="20" src="https://img.shields.io/badge/🎉-Enjoy_and_Contribute-yellow?style=for-the-badge" alt="Enjoy and Contribute" />
+</p>
 
 <!-- below TOC uses https://github.com/marketplace/actions/toc-generator -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -62,8 +101,7 @@
 
 Check the `Projects` tab for current tasks.
 
-
-
+- GH-1 - just a test
 ### Projects
 
 <ins>Easy: </ins>
