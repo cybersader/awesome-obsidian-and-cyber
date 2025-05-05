@@ -6,7 +6,7 @@
 # 2) (Optional) Force JSON/YAML/TOML detection if you have data/config files
 # Uncomment any you need:
 
-#*.json   linguist-language=JSON
+*.json   linguist-language=JSON
 #*.yml    linguist-language=YAML
 #*.yaml   linguist-language=YAML
 #*.toml   linguist-language=Toml
