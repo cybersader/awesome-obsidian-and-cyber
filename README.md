@@ -5,6 +5,7 @@
   <h1>Awesome Obsidian &amp; Cyber</h1>
   <em>innovating knowledge work in cyberspace</em>
 </div>
+<br>
 
 <!-- Badge Bar -->
 <p align="center">
