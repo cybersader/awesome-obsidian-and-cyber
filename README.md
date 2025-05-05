@@ -50,7 +50,7 @@
 
 - [Working Group](#working-group)
   - [Current Projects, Ideas, Tasks](#current-projects-ideas-tasks)
-    - [Projects](#projects)
+    - [High-Level Projects](#high-level-projects)
 - [General Obsidian & Workflow](#general-obsidian--workflow)
   - [0) Obsidian Starters & Templates](#0-obsidian-starters--templates)
     - [Starter Vaults](#starter-vaults)
