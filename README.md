@@ -113,7 +113,7 @@
 - Use `Ctrl + ENTER` to make a draft
 - Use `ENTER` to make an issue/task
 
-### Projects
+### High-Level Projects
 
 <details><summary>Projects</summary>
 <br>
