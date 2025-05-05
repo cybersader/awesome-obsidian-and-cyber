@@ -116,6 +116,9 @@
 
 ### Projects
 
+<details><summary>Projects</summary>
+<br>
+
 <ins>Easy: </ins>
 
 > You should be able to start adding to these now
@@ -133,7 +136,7 @@
 	- Plugin to map/sync folders and tags (multiple hierarchies so we aren't limited by folders)
 - [github.com > cybersader/Crosswalker: A tool for crosswalking cybersecurity frameworks and translating them into an Obsidian vault (Other names: LavaLinker](https://github.com/cybersader/Crosswalker)
 - Frameworker - `map evidence to frameworks in one place`
-	- Obsidian plugin or workflow to define metadata per framework <-> obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database.
+	- Obsidian plugin or workflow to define metadata per framework ↔️ obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database.
 	- Ex:
 		- You could have a `CIS 1.1.md` note generated from the above [crosswalker](https://github.com/cybersader/Crosswalker) tool and a `Evidence_containing_note.md`.  Linking from one note to another isn't good enough.  Instead, we can include metadata above the connection in the link syntax are in an intermediate file.  
 		- From `Evidence_containing_note.md`, we would make a link like `framework_here:: [CIS 1.1](../CIS 1.1.md) {"reviewer": "Person", "status":"covered"}`.  
@@ -145,6 +148,8 @@
 - Test risks of Obsidian application
 - Fix SMB share and other problems by implementing CRDT-based reconciler for file system like OneNote uses.  Conflict handling for multiple user situations like corporate without needing to go to a block-baswd system like Notion
 - User management layer on-top of browser-based Obsidian (linuxserver container like what KASM workspaces uses).  This would make Enterprise use with Obsidian possible (collaboration and accessibility with security)
+
+</details>
 
 ---
 
