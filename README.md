@@ -103,6 +103,7 @@
 Check the `Projects` tab for current tasks.
 
 - GH-1 - just a test
+- #1
 ### Projects
 
 <ins>Easy: </ins>
@@ -291,19 +292,31 @@ Check the `Projects` tab for current tasks.
 
 ## Obsidian Tools
 
-- .
+- Obsidian Web Clipper
+- Obsidian Sync
+- Obsidian Publish
 
 ## Browser
 
-- .
+- Brave Browser
+	- IMO Best Option - you can set `flags://` to sync Browser tab groups between multiple devices.  This is the best way to do research sessions on your phone, then have access to the sessions seamlessly on your computer
+- Extensions
+	- Obsidian Web Clipper
+	- MarkDownload
+	- Copy Title and URL as Markdown Style
+	- Copy URL to Clipboard
 
 ## Core Windows 
 
-- .
+- Sharex
+- PowerToys
+- OBS Studio
+- GitHub Desktop
 
 ## Core Mac 
 
-- .
+- Raycast
+- 
 
 ---
 

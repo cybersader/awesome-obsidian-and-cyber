@@ -1,0 +1,5 @@
+# ─── Treat .md files as Markdown ─────────────────────────────────────────────
+*.md linguist-language=Markdown
+
+# ─── Optionally mark everything else as documentation (so only .md counts) ───
+* linguist-documentation=true
