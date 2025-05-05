@@ -29,9 +29,9 @@
   <img width="auto" height="20" src="https://img.shields.io/github/license/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="License" />
   <!-- Community & Engagement -->
   <img height=20 width=auto src="https://img.shields.io/github/contributors/cybersader/awesome-obsidian-and-cyber.svg" alt="Contributors">  
-  <img width="auto" height="20" src="https://img.shields.io/github/discussions/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Discussions" />
+  <!--<img width="auto" height="20" src="https://img.shields.io/github/discussions/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Discussions" />
   <img width="auto" height="20" src="https://img.shields.io/badge/comments-Giscus-000?style=flat-square&logo=giscus&logoColor=white" alt="Giscus Comments" />
-  <img width="auto" height="20" src="https://img.shields.io/badge/comments-Utterances-white?style=flat-square&logo=github&logoColor=black" alt="Utterances Comments" />
+  <img width="auto" height="20" src="https://img.shields.io/badge/comments-Utterances-white?style=flat-square&logo=github&logoColor=black" alt="Utterances Comments" />-->
   <!-- Social & Sponsors -->
   <img width="auto" height="20" src="https://img.shields.io/badge/Join_Discord-7289DA?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
   <img width="auto" height="20" src="https://img.shields.io/twitter/follow/cybersader?style=flat-square&logo=twitter&logoColor=white" alt="Twitter Follow" />
