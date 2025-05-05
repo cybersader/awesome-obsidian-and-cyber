@@ -10,11 +10,11 @@
 <!-- Badge Bar -->
 <p align="center">
    <img height=20 width=auto src="https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff&style=flat-square" alt="Notion Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=fff&style=flat-square" alt="Obsidian Badge"> 
-   <img height=20 width=auto src="https://img.shields.io/github/contributors/cybersader/awesome-obsidian-and-cyber.svg" alt="Contributors">  
+   <img height=20 width=auto src="https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=fff&style=for-the-badge" alt="Markdown Badge">
   <!-- Curated list badge -->
   <img width="auto" height="20" src="https://img.shields.io/badge/📦-Curated-blue?style=for-the-badge" alt="Curated" />
-  <!-- Awesome‑List spec version -->
-  <img width="auto" height="20" src="https://img.shields.io/badge/Awesome_List-v1.0-brightgreen?style=for-the-badge" alt="Awesome List v1.0" />
+  <!-- Awesome‑List -->
+  <img height=20 width=auto src="https://img.shields.io/badge/Awesome%20Lists-FC60A8?logo=awesomelists&logoColor=fff&style=for-the-badge" alt="Awesome List"> 
   <!-- Stars & Forks -->
   <img width="auto" height="20" src="https://img.shields.io/github/stars/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="GitHub stars" />
   <img width="auto" height="20" src="https://img.shields.io/github/forks/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="GitHub forks" />
@@ -29,6 +29,7 @@
   <img width="auto" height="20" src="https://img.shields.io/github/last-commit/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Last Commit" />
   <img width="auto" height="20" src="https://img.shields.io/github/license/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="License" />
   <!-- Community & Engagement -->
+  <img height=20 width=auto src="https://img.shields.io/github/contributors/cybersader/awesome-obsidian-and-cyber.svg" alt="Contributors">  
   <img width="auto" height="20" src="https://img.shields.io/github/discussions/cybersader/awesome-obsidian-and-cyber?style=flat-square" alt="Discussions" />
   <img width="auto" height="20" src="https://img.shields.io/badge/comments-Giscus-000?style=flat-square&logo=giscus&logoColor=white" alt="Giscus Comments" />
   <img width="auto" height="20" src="https://img.shields.io/badge/comments-Utterances-white?style=flat-square&logo=github&logoColor=black" alt="Utterances Comments" />
