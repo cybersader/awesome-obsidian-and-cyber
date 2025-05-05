@@ -62,15 +62,7 @@
 
 Check the `Projects` tab for current tasks.
 
-<ins>Curated tasks from this README:</ins>
-<!-- QueryToSerialize: LIST WITHOUT ID t.text FLATTEN file.tasks AS t WHERE file.name = this.file.name -->
-<!-- SerializedQuery: LIST WITHOUT ID t.text FLATTEN file.tasks AS t WHERE file.name = this.file.name -->
-- start GRC template repo ➕ 2025-05-04
 
-- Add "cyberbase" starter (need to make a repo for this) ➕ 2025-05-04
-- Develop a community vault repo ➕ 2025-05-04
-- Need to do more testing to build a good mobile vault that is performant, has good buttons, etc. ➕ 2025-05-04
-<!-- SerializedQuery END -->
 
 ### Projects
 
