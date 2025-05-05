@@ -1,8 +1,27 @@
-# Apply override to all files in the directory
-*.md linguist-detectable
+# ─── Override Linguist for language stats ─────────────────────────────────
 
-# # ─── Treat .md files as Markdown ─────────────────────────────────────────────
-# *.md linguist-language=Markdown
+# 1) Treat Markdown as “code” (detectable) and not just documentation
+*.md   linguist-language=Markdown   linguist-detectable=true   linguist-documentation=false
 
-# # ─── Optionally mark everything else as documentation (so only .md counts) ───
-# * linguist-documentation=true
+# 2) (Optional) Force JSON/YAML/TOML detection if you have data/config files
+# Uncomment any you need:
+
+#*.json   linguist-language=JSON
+#*.yml    linguist-language=YAML
+#*.yaml   linguist-language=YAML
+#*.toml   linguist-language=Toml
+
+# 3) Custom overrides for other file types
+# e.g. if you want a bespoke extension to count as a real language:
+#*.obsidian.json   linguist-language=JSON
+#*.customext       linguist-language=MyLang
+
+# 4) Hide or vendor non‑source files so they don’t pollute stats
+# (images, assets, generated code, docs folder, etc.)
+#assets/**         linguist-vendored=true
+#images/**         linguist-vendored=true
+#dist/**           linguist-vendored=true
+#build/**          linguist-vendored=true
+
+# 5) If you have a docs/ folder you want completely ignored
+# docs/**           linguist-documentation=true
