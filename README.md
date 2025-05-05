@@ -144,7 +144,7 @@
 
 >These rely on complex technical problems or complete architectures from the ground up
 
-- Test risks of Obsidian application
+- Test risks of Obsidian application - penetration testing, exploitation
 - Fix SMB share and other problems by implementing CRDT-based reconciler for file system like OneNote uses.  Conflict handling for multiple user situations like corporate without needing to go to a block-baswd system like Notion
 - User management layer on-top of browser-based Obsidian (linuxserver container like what KASM workspaces uses).  This would make Enterprise use with Obsidian possible (collaboration and accessibility with security)
 
@@ -249,7 +249,7 @@
 
 - make program documentation in Obsidian and format to work with GitHub
 
-## Penetration
+## Red Team
 
 - streamline test reporting and documentation
 - organize pen testing knowledge for easier sharing and collaboration 
