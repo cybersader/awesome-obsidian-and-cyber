@@ -3,7 +3,7 @@
 <!-- Top‑of‑README Header -->
 <div align="center">
   <h1>Awesome Obsidian &amp; Cyber</h1>
-  <em>innovating cyber knowledge work in cyberspace</em>
+  <em>innovating how we work with cyber knowledge</em>
 </div>
 <br>
 
