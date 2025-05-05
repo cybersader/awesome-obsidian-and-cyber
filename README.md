@@ -76,6 +76,8 @@ Check the `Projects` tab for current tasks.
 
 <ins>Easy: </ins>
 
+> You should be able to start adding to these now
+
 - Starter vaults for for SecOps, couple/family productivity, personal branding, GRC, and more
 - Test Obsidian plugins with application firewall to watch traffic
 - Curate Obsidian plugins
@@ -83,13 +85,20 @@ Check the `Projects` tab for current tasks.
 
 <ins>Medium:</ins>
 
-> With time, you can solve some of these with AI.  They just take awhile
+> With time, you can solve some of these with AI.  They just take time.
 
-- Plugin to map/sync folders and tags (multiple hierarchies so we aren't limited by folders)
-- Crosswalker - convert frameworks into Obsidian notes
-- Frameworker - obsidian plugins or workflow to define metadata per framework <-> obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database
+- [github.com > cybersader/obsidian-tag-and-folder-mapper](https://github.com/cybersader/obsidian-tag-and-folder-mapper)
+	- Plugin to map/sync folders and tags (multiple hierarchies so we aren't limited by folders)
+- [github.com > cybersader/Crosswalker: A tool for crosswalking cybersecurity frameworks and translating them into an Obsidian vault (Other names: LavaLinker](https://github.com/cybersader/Crosswalker)
+- Frameworker - `map evidence to frameworks in one place`
+	- Obsidian plugin or workflow to define metadata per framework <-> obsidian_note connection. This would be step 1 of turning Obsidian into a full-fledged GRC database.
+	- Ex:
+		- You could have a `CIS 1.1.md` note generated from the above [crosswalker](https://github.com/cybersader/Crosswalker) tool and a `Evidence_containing_note.md`.  Linking from one note to another isn't good enough.  Instead, we can include metadata above the connection in the link syntax are in an intermediate file.  
+		- From `Evidence_containing_note.md`, we would make a link like `framework_here:: [CIS 1.1](../CIS 1.1.md) {"reviewer": "Person", "status":"covered"}`.  
 
 <ins>Hard / Seasoned-Developer / Pentester:</ins>
+
+>These rely on complex technical problems or complete architectures from the ground up
 
 - Test risks of Obsidian application
 - Fix SMB share and other problems by implementing CRDT-based reconciler for file system like OneNote uses.  Conflict handling for multiple user situations like corporate without needing to go to a block-baswd system like Notion
@@ -101,6 +110,9 @@ Check the `Projects` tab for current tasks.
 
 ## 0) Obsidian Starters & Templates
 
+> As I build template repos in GitHub, I've been using the below repo template I made to fast-track the process and have consistency
+- [github.com > cybersader/obsidian-vault-template-template: Obsidian template for vault templates for GitHub](https://github.com/cybersader/obsidian-vault-template-template)
+
 ### Starter Vaults
 
 #### (Starter Vaults) Corporate, Enterprise
@@ -111,7 +123,7 @@ Check the `Projects` tab for current tasks.
 
 #### (Starter Vaults) Personal Branding
 
-- [github.com > cybersader/cyberbase: My public and contributable base/wiki/digital garden for cybersecurity](https://github.com/cybersader/cyberbase) - my live vault that I use as a website
+- [github.com > cybersader/cyberbase: My public and contributable base/wiki/digital garden for cybersecurity](https://github.com/cybersader/cyberbase) - my public vault that I use as a website
 
 - [ ] Add "cyberbase" starter (need to make a repo for this) ➕ 2025-05-04
 
@@ -274,6 +286,6 @@ Check the `Projects` tab for current tasks.
 
 - Alternative tools - not Obsidian
 - Using Notion and Obsidian
-	- https://github.com/cybersader/notion-to-obsidian-github-sync
+	- [github.com > cybersader/notion-to-obsidian-github-sync: Backs up Notion workspace to repo to be used for Obsidian KB/KMS.  Also gets rid of page IDs and cleans up links.](https://github.com/cybersader/notion-to-obsidian-github-sync)
 - Affine, Appflowy, Trillium, etc.
 - Comparisons for cyber
