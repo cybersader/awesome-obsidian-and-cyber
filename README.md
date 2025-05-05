@@ -71,7 +71,7 @@
   - [Awareness](#awareness)
   - [SecOps](#secops)
   - [Application Security](#application-security)
-  - [Penetration](#penetration)
+  - [Red Team](#red-team)
 - [Obsidian Technicals](#obsidian-technicals)
 - [Using Obsidian for...](#using-obsidian-for)
   - [for Corporate, Enterprise](#for-corporate-enterprise)
