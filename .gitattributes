@@ -1,3 +1,6 @@
+# Apply override to all files in the directory
+*.md linguist-detectable
+
 # ─── Treat .md files as Markdown ─────────────────────────────────────────────
 *.md linguist-language=Markdown
 
