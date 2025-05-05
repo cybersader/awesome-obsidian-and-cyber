@@ -95,16 +95,22 @@
 
 # Working Group
 
-- if you would like to join the working group than contact me at https://cal.com/cybersader 
+- If you would like to join the working group than contact me at https://cal.com/cybersader 
+
+- Check out the [CONTRIBUTING](CONTRIBUTING.md) doc to see how you can contribute to this space
 
 ## Current Projects, Ideas, Tasks
 
 ### Tasks
 
-Check the `Projects` tab for current tasks.
+Check `Projects` for current tasks.
+- [Current Projects Board](https://github.com/users/cybersader/projects/2/views/1)
 
-- GH-1 - just a test
-- #1
+<ins>Using Projects board:</ins>
+- Type at bottom
+- Use `Ctrl + ENTER` to make a draft
+- Use `ENTER` to make an issue/task
+
 ### Projects
 
 <ins>Easy: </ins>
