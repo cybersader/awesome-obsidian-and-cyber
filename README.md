@@ -6,7 +6,6 @@
   <em>innovating how we work with cyber knowledge</em>
 </div>
 <br>
-
 <!-- Badge Bar -->
 <p align="center">
    <img height=20 width=auto src="https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff&style=flat-square" alt="Notion Badge">  <img height=20 width=auto src="https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=fff&style=flat-square" alt="Obsidian Badge"> 
@@ -101,10 +100,14 @@
 
 ## Current Projects, Ideas, Tasks
 
-### Tasks
-
-Check `Projects` for current tasks.
-- [Current Projects Board](https://github.com/users/cybersader/projects/2/views/1)
+<a href="https://github.com/users/cybersader/projects/2/views/1">
+  <img
+    height="20"
+    width="auto"
+    src="https://img.shields.io/badge/Projects-Board-blue?style=flat-square&logo=github&logoColor=white"
+    alt="Projects Board"
+  />
+</a> - current tasks, ideas, etc.
 
 <ins>Using Projects board:</ins>
 - Type at bottom
