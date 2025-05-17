@@ -1,0 +1,2756 @@
+{
+  "general_settings": {
+    "betaFeatures": false,
+    "legacyMode": false,
+    "saveBehavior": "addToObsidian",
+    "showMoreActionsButton": false,
+    "silentOpen": false
+  },
+  "highlighter_settings": {
+    "alwaysShowHighlights": true,
+    "highlightBehavior": "highlight-inline",
+    "highlighterEnabled": true
+  },
+  "interpreter_settings": {
+    "defaultPromptContext": "{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:4000}}",
+    "interpreterAutoRun": false,
+    "interpreterEnabled": true,
+    "interpreterModel": "1742305083349",
+    "models": [
+      {
+        "enabled": true,
+        "id": "gpt-4o-mini",
+        "name": "Llama 3.2 3b",
+        "providerId": "1741447127139",
+        "providerModelId": "llama3.2"
+      },
+      {
+        "baseUrl": "https://api.openai.com/v1/chat/completions",
+        "enabled": false,
+        "id": "gpt-4o",
+        "name": "GPT-4o",
+        "provider": "OpenAI"
+      },
+      {
+        "baseUrl": "https://api.openai.com/v1/chat/completions",
+        "enabled": false,
+        "id": "gpt-o1-mini",
+        "name": "GPT-o1 Mini",
+        "provider": "OpenAI"
+      },
+      {
+        "baseUrl": "https://api.anthropic.com/v1/messages",
+        "enabled": false,
+        "id": "claude-3-5-sonnet-20240620",
+        "name": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "baseUrl": "https://api.anthropic.com/v1/messages",
+        "enabled": false,
+        "id": "claude-3-haiku-20240307",
+        "name": "Claude 3 Haiku",
+        "provider": "Anthropic"
+      },
+      {
+        "baseUrl": "https://api.anthropic.com/v1/messages",
+        "enabled": false,
+        "id": "claude-3-opus-20240229",
+        "name": "Claude 3 Opus",
+        "provider": "Anthropic"
+      },
+      {
+        "enabled": false,
+        "id": "1741827573429",
+        "name": "Gemma 3 12b",
+        "providerId": "1741447127139",
+        "providerModelId": "gemma3:12b"
+      },
+      {
+        "enabled": false,
+        "id": "1741828197343",
+        "name": "Deepseek-R1 (8b)",
+        "providerId": "1741447127139",
+        "providerModelId": "deepseek-r1:8b"
+      },
+      {
+        "enabled": true,
+        "id": "1742305083349",
+        "name": "Gemma 3 4b",
+        "providerId": "1741447127139",
+        "providerModelId": "gemma3:4b"
+      }
+    ],
+    "providers": [
+      {
+        "apiKey": "",
+        "baseUrl": "http://127.0.0.1:11434/api/chat",
+        "id": "1741447127139",
+        "name": "Ollama"
+      }
+    ]
+  },
+  "migrationVersion": 1,
+  "property_types": [
+    {
+      "name": "title",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "type": "multitext"
+    },
+    {
+      "name": "published",
+      "type": "date"
+    },
+    {
+      "defaultValue": "{{date}}",
+      "name": "created",
+      "type": "date"
+    },
+    {
+      "name": "description",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "{{schema:thumbnailUrl|slice:0}}",
+      "name": "image",
+      "type": "text"
+    },
+    {
+      "name": "price",
+      "type": "text"
+    },
+    {
+      "name": "ai_title",
+      "type": "text"
+    },
+    {
+      "name": "reviewed",
+      "type": "datetime"
+    },
+    {
+      "name": "url",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{schema:@VideoObject:author}}",
+      "name": "channel",
+      "type": "text"
+    },
+    {
+      "defaultValue": "[[Videos]]",
+      "name": "related",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "{{schema:@VideoObject:thumbnailUrl|first}}",
+      "name": "thumbnailUrl",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"}}",
+      "name": "duration",
+      "type": "text"
+    },
+    {
+      "name": "watched",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:shreddit-post?subreddit-prefixed-name}}",
+      "name": "subreddit",
+      "type": "text"
+    },
+    {
+      "defaultValue": "youtube",
+      "name": "type",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{url}}",
+      "name": "URL",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{date}}",
+      "name": "URL_Retrieved",
+      "type": "date"
+    },
+    {
+      "defaultValue": "{{schema:uploadDate|date:\\\"YYYY-MM-DD\\\"}}",
+      "name": "URL_Published",
+      "type": "date"
+    },
+    {
+      "defaultValue": "{{title}}",
+      "name": "URL_Title",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{description}}",
+      "name": "URL_Description",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{author|split:\\\", \\\"|first}}",
+      "name": "Youtube_Channel_Name",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{schema:@BreadcrumbList:itemListElement[0].item.@id}}",
+      "name": "Youtube_Channel_URL",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{url|split:\\\"=\\\"|slice:1}}",
+      "name": "Youtube_ID",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:#ytd-player .ytp-time-duration}}",
+      "name": "Youtube_Duration",
+      "type": "text"
+    },
+    {
+      "name": "speakers",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{meta:name:octolytics-dimension-user_login}}",
+      "name": "owner",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:.Layout-sidebar a?href|first}}",
+      "name": "website",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:#repo-stars-counter-star}}",
+      "name": "stars",
+      "type": "number"
+    },
+    {
+      "defaultValue": "[[{{schema:@PodcastEpisode:partOfSeries.name|safe_name}}]]",
+      "name": "show",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{schema:@PodcastEpisode:url}}",
+      "name": "url_apple",
+      "type": "text"
+    },
+    {
+      "name": "url_youtube",
+      "type": "text"
+    },
+    {
+      "name": "url_shownotes",
+      "type": "text"
+    },
+    {
+      "name": "guests",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{schema:@PodcastEpisode:thumbnailUrl}}",
+      "name": "thumbnail",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:a.css-1ioi40n.e19afand0?href}}",
+      "name": "authorURL",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "{{date}}",
+      "name": "applied",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:span[class=\\\"g3\\\"]?title|last|date:\\\"YYYY-MM-DDTHH:mm\\\"}}",
+      "name": "received",
+      "type": "datetime"
+    },
+    {
+      "defaultValue": "{{selector:div.ha > h2}}",
+      "name": "subject",
+      "type": "text"
+    },
+    {
+      "name": "domain",
+      "type": "text"
+    },
+    {
+      "name": "genre",
+      "type": "text"
+    },
+    {
+      "name": "date created",
+      "type": "date"
+    },
+    {
+      "name": "favicon",
+      "type": "text"
+    },
+    {
+      "name": "link",
+      "type": "text"
+    },
+    {
+      "name": "interest",
+      "type": "number"
+    },
+    {
+      "name": "rating",
+      "type": "number"
+    },
+    {
+      "name": "percent_watched",
+      "type": "text"
+    },
+    {
+      "name": "ai_model",
+      "type": "text"
+    },
+    {
+      "name": "highlights",
+      "type": "text"
+    },
+    {
+      "name": "aliases",
+      "type": "text"
+    },
+    {
+      "name": "desc",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{meta:name:octolytics-dimension-repository_network_root_nwo|split:\"/\"|last|split:\":\"|first|trim}}",
+      "name": "title2",
+      "type": "text"
+    },
+    {
+      "name": "ai_tags",
+      "type": "text"
+    }
+  ],
+  "reader_settings": {
+    "fontSize": 1.5,
+    "lineHeight": 1.6,
+    "maxWidth": 38,
+    "theme": "default",
+    "themeMode": "auto"
+  },
+  "stats": {
+    "addToObsidian": 167,
+    "copyToClipboard": 0,
+    "saveFile": 0,
+    "share": 0
+  },
+  "template_1732549804596vjn9wby4d": {
+    "id": "1732549804596vjn9wby4d",
+    "name": "Default",
+    "behavior": "create",
+    "noteNameFormat": "{{title|safe_name:windows}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{content}}",
+    "context": "",
+    "properties": [
+      {
+        "id": "173254980459627ika9w2c",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1732549804596u6i8f7ayt",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17325498045969n2uux64k",
+        "name": "author",
+        "value": "{{author|split:\\\", \\\"|wikilink|join}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1732549804596sof8sjpe2",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "1732549804596scrixox4y",
+        "name": "date created",
+        "value": "{{date}}",
+        "type": "text"
+      },
+      {
+        "id": "17325498045960yl1k1lox",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1732549804596ldg8zxjse",
+        "name": "tags",
+        "value": "clippings",
+        "type": "multitext"
+      }
+    ],
+    "triggers": []
+  },
+  "template_1734364393307t0wsrpv3w": {
+    "id": "1734364393307t0wsrpv3w",
+    "name": "Wikipedia",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{selectorHtml:.mw-parser-output > :is(p, ul, ol, div.mw-heading, div:has(ul, ol))|join:\" \"|remove_html:\".mw-editsection, .mw-empty-elt, .toc, .infobox, .navbox, .navbox-styles, style\"|strip_tags:\"h1, h2, h3, h4, h5, p, b, i, sup, ol, ul, li, blockquote, cite\"|replace:\"<b>^</b> \":\"\"|strip_attr|markdown}}",
+    "properties": [
+      {
+        "id": "17424282750832ckfo41nh",
+        "name": "tags",
+        "value": "-clippings, -clippings/wikipedia",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "/^https:\\/\\/(\\w+)\\.wikipedia\\.org\\/wiki\\/.*$/"
+    ],
+    "context": ""
+  },
+  "template_173782417371313sc30wwp": {
+    "id": "173782417371313sc30wwp",
+    "name": "Amazon - URL w/Title (Copy/Paste)",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "Clippings",
+    "noteContentFormat": "[{{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}}) - {{selector:.priceToPay|first}}",
+    "properties": [
+      {
+        "id": "1737824563873gfabhyx76",
+        "name": "price",
+        "value": "{{selector:.priceToPay|first}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://amazon.com/",
+      "https://www.amazon.com/"
+    ],
+    "context": ""
+  },
+  "template_173782428150749wwtow": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube",
+    "behavior": "create",
+    "noteNameFormat": "{{schema:author}} – {{schema:name}}",
+    "path": "Clippings",
+    "noteContentFormat": "[{{domain}} > {{schema:name}} | {{schema:author}}]({{url}})",
+    "properties": [
+      {
+        "id": "1737824281509bcm0xpt",
+        "name": "title",
+        "value": "{{schema:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17378242815094djcc9h",
+        "name": "author",
+        "value": "{{schema:author|wikilink}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1737824281509kkoogcy",
+        "name": "published",
+        "value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
+        "type": "date"
+      },
+      {
+        "id": "1737824281509z0vlya0",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1737824281509e8ykmb5",
+        "name": "image",
+        "value": "{{schema:thumbnailUrl|slice:0}}",
+        "type": "text"
+      },
+      {
+        "id": "1737824281509465kzjr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1737824281509i3s5x7u",
+        "name": "tags",
+        "value": "videos",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "id": "173782428150749wwtow",
+    "context": ""
+  },
+  "template_17378401407639yg9hx22i": {
+    "id": "17378401407639yg9hx22i",
+    "name": "IDEA - relate to wikilink",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{content}}",
+    "properties": [
+      {
+        "id": "17421494158873zybpnh39",
+        "name": "link",
+        "value": "[[PAGE_HERE]]",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "context": ""
+  },
+  "template_1741447200627fminttrkr": {
+    "id": "1741447200627fminttrkr",
+    "name": "Markdown Link",
+    "behavior": "create",
+    "noteNameFormat": "{{title|safe_name:windows}}",
+    "path": "Clippings",
+    "noteContentFormat": "[{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})",
+    "properties": [
+      {
+        "id": "173254980459627ika9w2c",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1732549804596u6i8f7ayt",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17325498045969n2uux64k",
+        "name": "author",
+        "value": "{{author|split:\\\", \\\"|wikilink|join}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1732549804596sof8sjpe2",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "1732549804596scrixox4y",
+        "name": "date created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "17325498045960yl1k1lox",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1732549804596ldg8zxjse",
+        "name": "tags",
+        "value": "clippings",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [],
+    "context": ""
+  },
+  "template_1741742592087u9990j0": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox",
+    "behavior": "create",
+    "noteContentFormat": "{{\"summarize this page in markdown format with no intros.  Take this from the perspective of a tech person.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing the website/service/technology for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings.\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{title|trim|split\" \"|first|safe_name:windows|capitalize|split:\" .\"|first}}",
+    "path": "⬇️ Clippings/Tech Inbox",
+    "id": "1741742592087u9990j0",
+    "context": "{{content}}"
+  },
+  "template_174174429908271jerm6ro": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox 2",
+    "behavior": "create",
+    "noteContentFormat": "{{\"summarize this page's content in markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings, {{\\\"add a list separated by commas of tags in a YAML list format - be thorough\\\"}}",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{url|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize}}",
+    "path": "⬇️ Clippings/Tech Inbox/{{url|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize}}",
+    "id": "174174429908271jerm6ro",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_1741827130824c40vk8ntu": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox 3",
+    "behavior": "create",
+    "noteContentFormat": "{{\"summarize this page's content in markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description. Don't include images\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings, {{\\\"add a list separated by commas of tags in a YAML list format - be thorough\\\"}}",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{\"Pick a good note or .md file title based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized\"}}",
+    "path": "⬇️ Clippings/Tech Inbox/{{\"Pick a good note or .md file title based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized.  Same as other one too\"}}",
+    "id": "1741827130824c40vk8ntu",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_1741830499556z83pz3u5g": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox 4",
+    "behavior": "create",
+    "noteContentFormat": "{{\"summarize this page's content in markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{url|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize}}",
+    "path": "⬇️ Clippings/Tech Inbox/{{url|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize}}",
+    "id": "1741830499556z83pz3u5g",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_1741830503705nf00tgs7s": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox 5",
+    "behavior": "create",
+    "noteContentFormat": "{{\"summarize this page's content in markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description. Don't include images\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{\"Pick a good note or .md file title based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized\"}}",
+    "path": "⬇️ Clippings/Tech Inbox/{{\"Pick a good note or .md file title based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized.  Same as other one too\"}}",
+    "id": "1741830503705nf00tgs7s",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_17420485584616at75j8zt": {
+    "id": "17420485584616at75j8zt",
+    "name": "ChatGPT",
+    "behavior": "create",
+    "noteNameFormat": "{{date|date:\"YYYY-MM-DD\"}} - {{selector:title}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{selector:.text-base|replace:\"/:([^\\s:]*):/g\":\"\"|replace:\"/\\\\([^tn])/g\":\"$1\"|replace:\"/\\\\t/g\":\"\\t\"|replace:\"/\\\\n/g\":\"\\n\"|replace:\"/^(?:-|\\*|\\+|•)\\s+/gm\":\"- \"|replace:\"/\\*\\*(.*?):\\*\\*/g\":\"$1:\"|replace:\"/^-\\s+\\*\\*(.*?)\\*\\*:?/gm\":\"- $1:\"|replace:\"/^(\\d+\\.)\\s+\\*\\*(.*?)\\*\\*:?/gm\":\"$1 $2:\"|replace:\"/(^(?:-|\\d+\\.)\\s+.*:\\s*)$\\n(?!(?:-|\\d+\\.)\\s+)/gm\":\"$1 \"|replace:\"/[\\*\\\"]/gm\":\"\"}}\n\n{{selector:.text-base|replace:\"/\\b(User|Assistant|ChatGPT):/g\":\"**$1:**\"|replace:\"/:([^\\s:]*):/g\":\"\"|replace:\"/\\\\([^tn])/g\":\"$1\"|replace:\"/\\\\t/g\":\"\\t\"|replace:\"/\\\\n/g\":\"\\n\"|replace:\"/^(?:-|\\*|\\+|•)\\s+/gm\":\"- \"|replace:\"/\\*\\*(.*?):\\*\\*/g\":\"$1:\"|replace:\"/^-\\s+\\*\\*(.*?)\\*\\*:?/gm\":\"- $1:\"|replace:\"/^(\\d+\\.)\\s+\\*\\*(.*?)\\*\\*:?/gm\":\"$1 $2:\"|replace:\"/(^(?:-|\\d+\\.)\\s+.*:\\s*)$\\n(?!(?:-|\\d+\\.)\\s+)/gm\":\"$1 \"|replace:\"/[\\*\\\"]/gm\":\"\"}}",
+    "context": "# {{selector:title}}\n\n{{selector:.text-base|trim:500}}",
+    "properties": [
+      {
+        "id": "173254980459627ika9w2c",
+        "name": "title",
+        "value": "{{selector:title}}",
+        "type": "text"
+      },
+      {
+        "id": "1732549804596u6i8f7ayt",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17325498045969n2uux64k",
+        "name": "author",
+        "value": "GPT and Cybersader",
+        "type": "multitext"
+      },
+      {
+        "id": "1732549804596sof8sjpe2",
+        "name": "published",
+        "value": "{{published}}",
+        "type": "date"
+      },
+      {
+        "id": "1732549804596scrixox4y",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "17325498045960yl1k1lox",
+        "name": "description",
+        "value": "{{\\\"summarize what's being talked about in a sentence\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1732549804596ldg8zxjse",
+        "name": "tags",
+        "value": "clippings",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://chatgpt.com"
+    ]
+  },
+  "template_17420510950552g0ill8": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube w/Transcript (FOLDER NOTES)",
+    "behavior": "create",
+    "noteContentFormat": "## About\n\ntype:: #type/video/youtube/new\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Notes\n\nYT=\n\n\n## Transcript\n\n{{selectorHtml:.ytd-transcript-segment-list-renderer|first|replace:\"&nbsp;\":\" \"|join|markdown}}",
+    "properties": [
+      {
+        "id": "1742051095061zpb2l8t",
+        "name": "created",
+        "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051095061i4kjkd7",
+        "name": "reviewed",
+        "value": "",
+        "type": "datetime"
+      },
+      {
+        "id": "174205109506150uvfsj",
+        "name": "url",
+        "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061wi8s8d5",
+        "name": "title",
+        "value": "{{schema:@VideoObject:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17420510950615ut34nl",
+        "name": "channel",
+        "value": "{{schema:@VideoObject:author}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061mkmnxgv",
+        "name": "related",
+        "value": "[[Videos]]",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051095061pdw0wmu",
+        "name": "published",
+        "value": "{{schema:@VideoObject:uploadDate|date:\\\"YYYY-MM-DD\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420510950614wilnuf",
+        "name": "thumbnailUrl",
+        "value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061mujtziu",
+        "name": "duration",
+        "value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "17424282414822leikleio",
+        "name": "tags",
+        "value": "-clippings, -clippings/youtube",
+        "type": "multitext"
+      },
+      {
+        "id": "17420510950619l8cl77",
+        "name": "watched",
+        "value": "",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch"
+    ],
+    "noteNameFormat": "{{schema:@VideoObject:uploadDate|date:\"YYYY-MM-DD\"}} VIDEO {{schema:@VideoObject:author}} - {{schema:@VideoObject:name|safe_name|trim}}",
+    "path": "",
+    "id": "17420510950552g0ill8",
+    "context": ""
+  },
+  "template_1742051310878myw53au": {
+    "schemaVersion": "0.1.0",
+    "name": "Github Releases",
+    "behavior": "create",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n# {{title}}\n\n{{selectorHtml:.markdown-body|markdown}}",
+    "properties": [
+      {
+        "id": "1742051310878l8oqeet",
+        "name": "created",
+        "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051310878zpb2j0d",
+        "name": "reviewed",
+        "value": "",
+        "type": "datetime"
+      },
+      {
+        "id": "1742051310878eu4ajfr",
+        "name": "url",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051310878f53m6si",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051310878x81na39",
+        "name": "author",
+        "value": "{{author|split:\\\",\\\"|join}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420513108789y0qvon",
+        "name": "published",
+        "value": "{{selector:relative-time?datetime|first|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051310878ahsbea3",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1742428434086uwt3fq2z7",
+        "name": "tags",
+        "value": "-clippings, -clippings/github",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "/^https.+github.+releases.+$/"
+    ],
+    "noteNameFormat": "{{selector:relative-time?datetime|first|date:\"YYYY-MM-DD\"}} WEB {{title|replace:\"/\":\" - \"|safe_name}}",
+    "path": "webclips",
+    "id": "1742051310878myw53au",
+    "context": ""
+  },
+  "template_1742051322023zrwz67s": {
+    "schemaVersion": "0.1.0",
+    "name": "Reddit Post (FOLDER NOTES)",
+    "behavior": "create",
+    "noteContentFormat": "> Posted in **{{selector:shreddit-post?subreddit-prefixed-name}}** by *{{selector:shreddit-post?author}}* at {{selector:shreddit-post?created-timestamp|date:\"YYYY-MM-DDTHH:mm:ssZ\"}} (⬆️ {{selector:shreddit-post?score}})\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n# {{selector:shreddit-post?post-title|trim}}\n\n{{selectorHtml:shreddit-post > div[class=\"text-neutral-content\"]|markdown}}\n\n{{selector:zoomable-img > img?src|image}}\n\n## Comments ({{selector:shreddit-comment-tree?totalcomments}})\n\n(WIP: get the first author, and first comment from arrays)\n\n### {{selector:shreddit-comment-tree > shreddit-comment?author|first}}:\n> {{selector:shreddit-comment-tree > shreddit-comment > div[slot=comment]|first}}",
+    "properties": [
+      {
+        "id": "1742051322024ieh2edp",
+        "name": "created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051322024c8kl8ay",
+        "name": "reviewed",
+        "value": "",
+        "type": "datetime"
+      },
+      {
+        "id": "1742051322024omf908e",
+        "name": "url",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051322024zd1qnj1",
+        "name": "tags",
+        "value": "clippings, clippings/reddit,{{\\\"add tags related to the video. Use a comma-separated list like 'tag1, tag2, tag3'. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like 'parent/child'.\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420513220244crl0a8",
+        "name": "title",
+        "value": "{{selector:shreddit-post?post-title|trim}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051322024daqcbl6",
+        "name": "published",
+        "value": "{{selector:shreddit-post?created-timestamp|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051322024pe1r2yl",
+        "name": "subreddit",
+        "value": "{{selector:shreddit-post?subreddit-prefixed-name}}",
+        "type": "text"
+      },
+      {
+        "id": "1742245479028r0yaiq0dx",
+        "name": "highlights",
+        "value": "{{highlights}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.reddit.com"
+    ],
+    "noteNameFormat": "{{selector:shreddit-post?post-title|trim|safe_name}}",
+    "path": "⬇️ Clippings/{{selector:shreddit-post?post-title|trim|safe_name}}",
+    "id": "1742051322023zrwz67s",
+    "context": ""
+  },
+  "template_1742051335387fifc653": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube timestamp",
+    "behavior": "append-specific",
+    "noteContentFormat": "- [{{selector:.ytp-time-current|first}}]({{url|split:\"&t=\"|first}}&t={{selector:.ytp-time-current|first|slice:0,-3|replace:\"\\:\":\"h\"}}m{{selector:.ytp-time-current|first|slice:-2}}s)",
+    "properties": [],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "noteNameFormat": "Timestamps",
+    "path": "YouTube Notes",
+    "id": "1742051335387fifc653"
+  },
+  "template_1742051352314t21en2o": {
+    "schemaVersion": "0.1.0",
+    "name": "youtube.com - transcript",
+    "behavior": "create",
+    "noteContentFormat": "\n# {{title}}\n\n![{{schema:name}}]({{url|replace:\"watch?v=\":\"embed/\"}})\n\n{{selectorHtml:#description-inline-expander|remove_html:(\"#structured-description, #snippet, tp-yt-paper-button\")|strip_tags|callout:(\"summary\",\"Description\",true)}}\n\n{{selectorHtml:ytd-engagement-panel-section-list-renderer[visibility$=\\\"EXPANDED\\\"] #segments-container|remove_html:(\"ytd-transcript-section-header-renderer, dom-if\")|strip_tags:(\"yt-formatted-string, yt-img-shadow, ytd-transcript-segment-renderer\")|join|markdown|callout:(\"transcript\",\"Transcript (Youtube)\",true)}}",
+    "properties": [
+      {
+        "id": "17420513523191b4vmqv",
+        "name": "type",
+        "value": "youtube",
+        "type": "text"
+      },
+      {
+        "id": "174205135231978xdlfu",
+        "name": "URL",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051352319cqnjwik",
+        "name": "URL_Retrieved",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051352319iovsrb2",
+        "name": "URL_Published",
+        "value": "{{schema:uploadDate|date:\\\"YYYY-MM-DD\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051352319mk1g2wk",
+        "name": "URL_Title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051352319aa1v00w",
+        "name": "URL_Description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051352319i90fnkw",
+        "name": "Youtube_Channel_Name",
+        "value": "{{author|split:\\\", \\\"|first}}",
+        "type": "text"
+      },
+      {
+        "id": "17420513523196tx8o0l",
+        "name": "Youtube_Channel_URL",
+        "value": "{{schema:@BreadcrumbList:itemListElement[0].item.@id}}",
+        "type": "text"
+      },
+      {
+        "id": "174205135231991fma8f",
+        "name": "Youtube_ID",
+        "value": "{{url|split:\\\"=\\\"|slice:1}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051352319bisb4pp",
+        "name": "Youtube_Duration",
+        "value": "{{selector:#ytd-player .ytp-time-duration}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051352319drj0td3",
+        "name": "speakers",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742051352319bwu2pwm",
+        "name": "tags",
+        "value": "youtube, inbox",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "noteNameFormat": "{{domain}} - {{title|safe_name}} - {{schema:@VideoObject:uploadDate|date:\"YYYY-MM-DD\"}}",
+    "path": "fullsource/webpages/{{domain}}",
+    "id": "1742051352314t21en2o"
+  },
+  "template_1742051364898q3xbtqz": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube (1)",
+    "behavior": "create",
+    "noteContentFormat": "## About\n\ntype:: #type/video/youtube/new\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Notes\n\nYT=",
+    "properties": [
+      {
+        "id": "1742051364898psjrcul",
+        "name": "created",
+        "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420513648980kvtc1z",
+        "name": "reviewed",
+        "value": "",
+        "type": "datetime"
+      },
+      {
+        "id": "1742051364898rrwsagq",
+        "name": "url",
+        "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051364898hcky458",
+        "name": "title",
+        "value": "{{schema:@VideoObject:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17420513648985m0qthj",
+        "name": "channel",
+        "value": "{{schema:@VideoObject:author}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051364898g0tkzps",
+        "name": "related",
+        "value": "[[Videos]]",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051364898vtnzldq",
+        "name": "published",
+        "value": "{{schema:@VideoObject:uploadDate|date:\\\"YYYY-MM-DD\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051364898s17r2c9",
+        "name": "thumbnailUrl",
+        "value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+        "type": "text"
+      },
+      {
+        "id": "17420513648982nqtlhq",
+        "name": "duration",
+        "value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "174205136489883aps6a",
+        "name": "watched",
+        "value": "",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch"
+    ],
+    "noteNameFormat": "{{schema:@VideoObject:uploadDate|date:\"YYYY-MM-DD\"}} VIDEO {{schema:@VideoObject:author}} - {{schema:@VideoObject:name|safe_name|trim}}",
+    "path": "",
+    "id": "1742051364898q3xbtqz"
+  },
+  "template_1742051380046qbpe00j": {
+    "schemaVersion": "0.1.0",
+    "name": "GitHub Issue",
+    "behavior": "create",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n# {{title}}\n\n({{selector:#partial-discussion-header > div.d-flex.flex-items-center.flex-wrap.mt-0.gh-header-meta > div.flex-auto.min-width-0.mb-2|split:\"· \"|last}})\n\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|first}}\n\n{{selectorHtml:.comment-body|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:1|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:1|first}}\n\n{{selectorHtml:.comment-body|slice:1|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:2|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:2|first}}\n\n{{selectorHtml:.comment-body|slice:2|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:3|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:3|first}}\n\n{{selectorHtml:.comment-body|slice:3|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:4|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:4|first}}\n\n{{selectorHtml:.comment-body|slice:4|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:5|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:5|first}}\n\n{{selectorHtml:.comment-body|slice:5|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:6|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:6|first}}\n\n{{selectorHtml:.comment-body|slice:6|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:7|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:7|first}}\n\n{{selectorHtml:.comment-body|slice:7|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:8|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:8|first}}\n\n{{selectorHtml:.comment-body|slice:8|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:9|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:9|first}}\n\n{{selectorHtml:.comment-body|slice:9|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:10|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:10|first}}\n\n{{selectorHtml:.comment-body|slice:10|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:11|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:11|first}}\n\n{{selectorHtml:.comment-body|slice:11|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:12|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:12|first}}\n\n{{selectorHtml:.comment-body|slice:12|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:13|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:13|first}}\n\n{{selectorHtml:.comment-body|slice:13|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:14|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:14|first}}\n\n{{selectorHtml:.comment-body|slice:14|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:15|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:15|first}}\n\n{{selectorHtml:.comment-body|slice:15|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:16|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:16|first}}\n\n{{selectorHtml:.comment-body|slice:16|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:17|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:17|first}}\n\n{{selectorHtml:.comment-body|slice:17|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:18|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:18|first}}\n\n{{selectorHtml:.comment-body|slice:18|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:19|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:19|first}}\n\n{{selectorHtml:.comment-body|slice:19|first|markdown}}\n\n## {{selector:div[class=\"timeline-comment-header clearfix d-flex\"] > h3 > div > strong > .author|slice:20|first}} wrote on {{selector:h3 > div > a > relative-time?datetime|slice:20|first}}\n\n{{selectorHtml:.comment-body|slice:20|first|markdown}}\n",
+    "properties": [
+      {
+        "id": "17420513800462vk0hl1",
+        "name": "created",
+        "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051380046i25mrri",
+        "name": "reviewed",
+        "value": "",
+        "type": "datetime"
+      },
+      {
+        "id": "17420513800464tykhxn",
+        "name": "url",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051380046lw2isf1",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051380046qlnd0ya",
+        "name": "author",
+        "value": "{{author|split:\\\",\\\"|join}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420513800468b7nzol",
+        "name": "published",
+        "value": "{{selector:relative-time?datetime|first|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051380046dihuwks",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "17424284472759gqyc16sh",
+        "name": "tags",
+        "value": "-clippings, -clippings/github",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "/^https.+github.+issues.+$/"
+    ],
+    "noteNameFormat": "{{selector:relative-time?datetime|first|date:\"YYYY-MM-DD\"}} WEB {{title|replace:\"/\":\" - \"|safe_name}}",
+    "path": "webclips",
+    "id": "1742051380046qbpe00j",
+    "context": ""
+  },
+  "template_1742051403630gedfl87": {
+    "schemaVersion": "0.1.0",
+    "name": "Apple Podcast Episode",
+    "behavior": "create",
+    "noteContentFormat": "\n#podcast/backlog\n\n# {{schema:@PodcastEpisode:name}}\n\n{{schema:@PodcastEpisode:thumbnailUrl|image:\"thumbnail|200\"}}\n\n## Description\n\n{{schema:@PodcastEpisode:description}}\n\n## Notes\n\n",
+    "properties": [
+      {
+        "id": "1742051403635bx9zcsu",
+        "name": "created",
+        "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051403635xb1htze",
+        "name": "reviewed",
+        "value": "",
+        "type": "datetime"
+      },
+      {
+        "id": "1742051403635s5x45vk",
+        "name": "tags",
+        "value": "podcasts, episode",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051403635lgym7g5",
+        "name": "show",
+        "value": "[[{{schema:@PodcastEpisode:partOfSeries.name|safe_name}}]]",
+        "type": "text"
+      },
+      {
+        "id": "1742051403635kpfbyob",
+        "name": "title",
+        "value": "{{schema:@PodcastEpisode:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17420514036353wppp5o",
+        "name": "published",
+        "value": "{{schema:@PodcastEpisode:datePublished|date:\\\"YYYY-MM-DD\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051403635p3t4da0",
+        "name": "url",
+        "value": "{{schema:@PodcastEpisode:url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051403635u25w4k6",
+        "name": "url_apple",
+        "value": "{{schema:@PodcastEpisode:url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051403635iij4gsj",
+        "name": "url_youtube",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742051403635vhzmhpy",
+        "name": "url_shownotes",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742051403635liyuy3p",
+        "name": "related",
+        "value": "[[podcast episodes]]",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051403635ixkhf30",
+        "name": "guests",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742051403635hdfshzo",
+        "name": "thumbnail",
+        "value": "{{schema:@PodcastEpisode:thumbnailUrl}}",
+        "type": "text"
+      },
+      {
+        "id": "17420514036355f7gwtv",
+        "name": "duration",
+        "value": "{{schema:@PodcastEpisode:duration}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://podcasts.apple.com/"
+    ],
+    "noteNameFormat": "{{schema:@PodcastEpisode:datePublished|date:\"YYYY-MM-DD\"}} PODCAST {{schema:@PodcastEpisode:partOfSeries.name|safe_name}} {{schema:@PodcastEpisode:episodeNumber}} {{schema:@PodcastEpisode:name|safe_name}}",
+    "path": "podcasts",
+    "id": "1742051403630gedfl87"
+  },
+  "template_17420514151895q3h5da": {
+    "schemaVersion": "0.1.0",
+    "name": "The Hacker News",
+    "behavior": "create",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n# {{title}}\n\n{{selectorHtml:#articlebody|remove_html:(\".dog_two,.note-b\")|markdown}}",
+    "properties": [
+      {
+        "id": "174205141518949qyya9",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051415189nv4jcj9",
+        "name": "url",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17420514151898203me3",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051415189g38gnt5",
+        "name": "author",
+        "value": "{{selector:.post-body > div[itemprop=\\\"author\\\"] > meta[itemprop=\\\"name\\\"]?content|split:\\\",\\\"|join}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051415189h7i8dzy",
+        "name": "published",
+        "value": "{{selectorHtml:.post-body > meta[itemprop=\\\"datePublished\\\"]?content|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051415189kox0l5l",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "174242851896700ftba72r",
+        "name": "tags",
+        "value": "-clippings, -clippings/news",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://thehackernews.com/"
+    ],
+    "noteNameFormat": "{{selectorHtml:.post-body > meta[itemprop=\"datePublished\"]?content|date:\"YYYY-MM-DD\"}} WEB {{title|safe_name}}",
+    "path": "webclips",
+    "id": "17420514151895q3h5da",
+    "context": ""
+  },
+  "template_17420514272106my38an": {
+    "schemaVersion": "0.1.0",
+    "name": "Indeed Job Application",
+    "behavior": "create",
+    "noteContentFormat": "## Job Details\n**Pay:** {{selector:div.js-match-insights-provider-1m98ica.e1xnxm2i0|first}}\n**Benefits:**\n{{selector:li.css-kyg8or.eu4oa1w0|list}}\n\n## Full Job Description\n{{content}}",
+    "properties": [
+      {
+        "id": "1742051427212ehuhyx3",
+        "name": "title",
+        "value": "{{title|safe_name}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051427212m93mk4f",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051427212hei5hbr",
+        "name": "author",
+        "value": "{{selector:span.css-1saizt3.e1wnkr790}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051427212vyf6eqc",
+        "name": "authorURL",
+        "value": "{{selector:a.css-1ioi40n.e19afand0?href}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051427212nzsvolx",
+        "name": "applied",
+        "value": "{{date}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051427212iateyy7",
+        "name": "tags",
+        "value": "applied, to-follow-up",
+        "type": "multitext"
+      },
+      {
+        "id": "1742051427212av1ih5u",
+        "name": "image",
+        "value": "{{image}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://indeed.com"
+    ],
+    "noteNameFormat": "{{title|safe_name}}",
+    "path": "{{date|date:\"MM-DD\"}}",
+    "id": "17420514272106my38an"
+  },
+  "template_1742051437592dlxn36q": {
+    "schemaVersion": "0.1.0",
+    "name": "Google Mail",
+    "behavior": "create",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n> [!INFO]+ Message details\n> Received: {{selector:span[class=\"g3\"]?title|last|date:\"YYYY-MM-DDTHH:mm\"}}\n> Subject: {{selector:div.ha > h2}}\n\n\n# {{selector:div.ha > h2}}\n\n{{selectorHtml:div.a3s|replace:\"tbody\":\"\"|replace:\"table\":\"\"|replace:\"td\":\"\"|replace:\"tr\":\"\"|markdown|strip_tags:(\"border\")|replace:\"<>\":\"\"|replace:\"     \":\"\"|replace:\"    \":\"\"}}\n",
+    "properties": [
+      {
+        "id": "1742051437594ove4xz1",
+        "name": "created",
+        "value": "{{time|date:\\\"YYYY-MM-DDTHH:mm:ssZ\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051437594mqdvdzf",
+        "name": "url",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "174205143759466ix40w",
+        "name": "received",
+        "value": "{{selector:span[class=\\\"g3\\\"]?title|last|date:\\\"YYYY-MM-DDTHH:mm\\\"}}",
+        "type": "datetime"
+      },
+      {
+        "id": "1742051437594b27su6q",
+        "name": "subject",
+        "value": "{{selector:div.ha > h2}}",
+        "type": "text"
+      },
+      {
+        "id": "17424285062633e3w6tfbh",
+        "name": "tags",
+        "value": "-clippings, -clippings/email",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://mail.google.com/mail"
+    ],
+    "noteNameFormat": "{{selector:span[class=\"g3\"]?title|date:\"YYYY-MM-DD\"}} MAIL {{selector:div.ha > h2|safe_name}}",
+    "path": "mail",
+    "id": "1742051437592dlxn36q",
+    "context": ""
+  },
+  "template_17420535174966a1823ay9": {
+    "id": "17420535174966a1823ay9",
+    "name": "Daily (FOLDER NOTES)(STRUCTURED)",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "⬇️ Clippings/{{date}}/{{date}}",
+    "noteContentFormat": "# [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n    - {{\"concise summary of this page - sentences only with no newlines.\"}}\n",
+    "context": "",
+    "properties": [],
+    "triggers": []
+  },
+  "template_1742054104449ivnrnnh": {
+    "schemaVersion": "0.1.0",
+    "name": "ChatGPT (FOLDER NOTES)",
+    "behavior": "create",
+    "noteContentFormat": "{{selector:'div[style*=\"opacity: 1;\"]'}}\n\n{{selector:'div[style*=\"opacity: 1;\"] a[href]'}}\n",
+    "properties": [
+      {
+        "id": "1742059660332grl47pbkw",
+        "name": "title",
+        "value": "{{selector:title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742248188509ojvb09so6",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449ac67sjr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420596768731wn4j35zs",
+        "name": "domain",
+        "value": "{{domain}}",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449bybmc3e",
+        "name": "source",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449ett5z70",
+        "name": "tags",
+        "value": "clippings, clippings/chatgpt,{{\\\"add tags related to the video. Use a comma-separated list like `tag1, tag2, tag3`. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like `parent/child`\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"|replace:\\\"/tag:/gm\\\":\\\"\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742059598794zvxo78u9u",
+        "name": "author",
+        "value": "ChatGPT, Cybersader",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://chatgpt.com/share",
+      "https://chatgpt.com/"
+    ],
+    "noteNameFormat": "{{selector:title|safe_name}}",
+    "path": "⬇️ Clippings/ChatGPT/{{selector:title|safe_name}}",
+    "id": "1742054104449ivnrnnh",
+    "context": "# {{selector:title}}\n\n{{selectorHtml:article[data-testid*=\"conversation-turn\"]|replace:\"/<svg.*?svg>/g\":\"\" |join:\"\"|replace:\"/<h5 class=\\\"sr-only\\\">\\s*You said:\\s*<\\/h5>/g\":\"# User:\\n\\n\"|replace:\"/<h5 class=\\\"sr-only\\\">\\s*<\\/h5>/g\":\"# AI:\\n\\n\"|remove_html:(\".text-token-text-secondary,.text-token-text-tertiary\")|markdown|replace:\"/\\\\# User:/gm\":\"**User:**\"|replace:\"/\\\\# AI:/gm\":\"---\\n\\n**AI:**\"|slice:0,4000}}"
+  },
+  "template_1742059201694lp30nuc28": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox (FOLDER NOTES)",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{\"summarize this page's content in a clean markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description. Don't include images.  Communicate all of the content in an efficient and not-too-concise manner.  Include markdown headings to break things down.\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings, clippings/tech,{{\\\"add tags related to the video. Use a comma-separated list like `tag1, tag2, tag3`. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like `parent/child`\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"|replace:\\\"/tag:/gm\\\":\\\"\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420640382385scbwgqe2",
+        "name": "favicon",
+        "value": "{{favicon}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{\"Pick a good note or .md file title (title of the tech) based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized\"trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "path": "⬇️ Clippings/Tech/{{\"Pick a good note or .md file title (title of the tech) based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized.  Same as other one too\"|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "id": "1742059201694lp30nuc28",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,4000}}"
+  },
+  "template_1742060156107w6xacuef5": {
+    "id": "1742060156107w6xacuef5",
+    "name": " News (FOLDER NOTES)(NO IMAGES)(limited to 120)",
+    "behavior": "create",
+    "noteNameFormat": "{{title|safe_name:windows|replace:\"/^(?=.{120,})(.{117}).+$/\":\"$1--\"}}",
+    "path": "⬇️ Clippings/News/{{title|safe_name:windows|replace:\"/^(?=.{120,})(.{117}).+$/\":\"$1--\"}}",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{content|replace:\"!\\[.*?\\]\\(.*?\\)\",\"\"}}",
+    "properties": [
+      {
+        "id": "1742248122075x8t0wn7o1",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "17422481331362jd6t9i61",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742233980403oma0uv77a",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1742247451386olyf0g8tt",
+        "name": "author",
+        "value": "{{author}}",
+        "type": "multitext"
+      },
+      {
+        "id": "174223402509923g3fkeod",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742245242216p9x3xujg4",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742234009121vsyj1kdcm",
+        "name": "tags",
+        "value": "-clippings, -clippings/news",
+        "type": "multitext"
+      },
+      {
+        "id": "1742245045079ciwqm7at8",
+        "name": "domain",
+        "value": "{{domain}}",
+        "type": "text"
+      },
+      {
+        "id": "1742245049294vda1xv0xd",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "context": ""
+  },
+  "template_1742060457529xyjdtri81": {
+    "id": "1742060457529xyjdtri81",
+    "name": "Daily - Summary about action with page (FOLDER NOTES)",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "⬇️ Clippings/",
+    "noteContentFormat": "# {{\"Action likely or definitely taken regarding the page\"}}\n\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"> [!note]- Highlights\\n$1\"|replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n\n{{content}}",
+    "properties": [],
+    "triggers": [],
+    "context": ""
+  },
+  "template_17420629678191tatl6yy2": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube w/AI Summary (FOLDER NOTES)(SMART NOTE TITLE)",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url|replace:\"embed/\":\"watch?v=\"|replace:\"/(.*)&(?:t|start)=([\\d]*)s$/g\":\"$1\"}})\n\n## Summary\n\n{{\"summarize the video and don't add fluff or intro to your response\"}}\n\n## Description\n\n{{schema:@VideoObject:description|replace:\"/(?:\\s*)(Subscribe).*\\n?/gmi\",\"\"|replace:\"/\\n\\n(?:Subscribe:|Connect with)[\\s\\S]*/gmi\":\"\"|replace:\"/([\\s\\S]*)(\\n\\n(?=[\\s\\S]*(?:Subscribe:|Connect with))[\\s\\S]*)$/\":\"$1\"}}\n\n",
+    "properties": [
+      {
+        "id": "174205109506150uvfsj",
+        "name": "url",
+        "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"|replace:\\\"/(.*)&(?:t|start)=([\\d]*)s$/g\\\":\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061wi8s8d5",
+        "name": "title",
+        "value": "{{schema:@VideoObject:name}}",
+        "type": "text"
+      },
+      {
+        "id": "1742248175607gfdidw0hq",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061pdw0wmu",
+        "name": "published",
+        "value": "{{schema:@VideoObject:uploadDate|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742051095061zpb2l8t",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17421574357933lpx61wtn",
+        "name": "rating",
+        "value": "",
+        "type": "number"
+      },
+      {
+        "id": "1742157439701ne4ch7rgv",
+        "name": "interest",
+        "value": "",
+        "type": "number"
+      },
+      {
+        "id": "1742061979785n27redyih",
+        "name": "tags",
+        "value": "-clippings, -clippings/youtube, {{\\\"add tags related to the video. Use a comma-separated list like 'tag1, tag2, tag3'. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like 'parent/child'.\\\"|replace:\\\"/,\\s*/g\\\":\\\",\\\"|replace:\\\"/ /g\\\":\\\"_\\\"|lower|replace:\\\"/^,|,$/g\\\":\\\"\\\"|replace:\\\"/(^|,)\\s*\\d[^,]*/g\\\":\\\"\\\"|replace:\\\"/,+/g\\\":\\\",\\\"|replace:\\\"/^,|,$/g\\\":\\\"\\\"|replace:\\\"/[^A-Za-z0-9_\\/,\\s-]/\\\":\\\"\\\"|replace:\\\"/\\-/\\\":\\\"_\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420510950615ut34nl",
+        "name": "channel",
+        "value": "{{schema:@VideoObject:author}}",
+        "type": "text"
+      },
+      {
+        "id": "17420510950614wilnuf",
+        "name": "thumbnailUrl",
+        "value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061mujtziu",
+        "name": "duration",
+        "value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"|duration:\\\"H:mm:ss\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742062320309a794g009r",
+        "name": "genre",
+        "value": "{{schema:@VideoObject:genre}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "noteNameFormat": "{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|replace:\"|\":\"-\"|safe_name|trim|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "path": "⬇️ Clippings/YouTube/{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|replace:\"|\":\"-\"|safe_name|trim|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "id": "17420629678191tatl6yy2",
+    "context": "# YouTube Video\nTitle: {{schema:@VideoObject:name}}\nChannel: {{schema:@VideoObject:author}}\nPublished: {{schema:@VideoObject:uploadDate|date:\"dddd, MMMM Do YYYY, h:mm a\"}}\nDuration: {{schema:@VideoObject:duration|replace:\"PT\",\"\",\"S\",\"\"|duration:\"H:mm:ss\"}}\nGenre: {{schema:@VideoObject:genre}}\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Transcript\n\n{{selectorHtml:.ytd-transcript-segment-list-renderer|first|replace:\"&nbsp;\":\" \"|join|markdown|3000}}"
+  },
+  "template_1742146396337utpay6e1p": {
+    "id": "1742146396337utpay6e1p",
+    "name": "ObsidianStats Plugin (FOLDER NOTES)",
+    "behavior": "create",
+    "noteNameFormat": "{{title|replace:\"/(.*)\\s\\-\\s(.*)/\":\"$1\"|safe_name:windows}}",
+    "path": "⬇️ Clippings/Obsidian Plugins/{{title|replace:\"/(.*)\\s\\-\\s(.*)/\":\"$1\"|safe_name:windows}}",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{\"summarize this Obsidian plugin in markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question - no prelude.  As if summarizing the website/service/technology for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after EVERY heading line\"}}\n\n# Notes",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742248154724zkqfm0y1m",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{selector:div.prose.mt-4.\\!max-w-none > p|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742218531613krsri4mmr",
+        "name": "rating",
+        "value": "",
+        "type": "number"
+      },
+      {
+        "id": "1741742592088bofm5p5",
+        "name": "author",
+        "value": "{{author|split:\\\", \\\"|wikilink|join}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "-clippings/obsidian_plugins, {{schema:@SoftwareApplication:applicationCategory|replace:\\\"/[^A-Za-z0-9_\\/,\\s-]/\\\":\\\"\\\"}}",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://www.obsidianstats.com/",
+      "https://obsidianstats.com/"
+    ],
+    "context": "{{content}}"
+  },
+  "template_1742148354709hzzqz7j31": {
+    "id": "1742148354709hzzqz7j31",
+    "name": "Z-------PLACEHOLDER------Z",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{content}}",
+    "properties": [],
+    "triggers": [],
+    "context": ""
+  },
+  "template_174214897098369c8oe7ob": {
+    "id": "174214897098369c8oe7ob",
+    "name": "Daily (FOLDER NOTES)",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "⬇️ Clippings/{{date}}/{{date}}",
+    "noteContentFormat": "[{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})\n    - {{\"concise summary of this page - sentences only with no newlines.\"}}",
+    "properties": [],
+    "triggers": [],
+    "context": ""
+  },
+  "template_1742151099535p038269ia": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube w/AI Summary (FOLDER NOTES) (WATCHED % TESTING)",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url|replace:\"embed/\":\"watch?v=\"|replace:\"/(.*)&(?:t|start)=([\\d]*)s$/g\":\"$1\"}})\n\n## About\n\ntype:: #type/video/youtube/new\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Summary\n\n{{\"summarize the video and don't add fluff or intro to your response\"}}\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n\n",
+    "properties": [
+      {
+        "id": "1742051095061zpb2l8t",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "174205109506150uvfsj",
+        "name": "url",
+        "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"|replace:\\\"/(.*)&(?:t|start)=([\\d]*)s$/g\\\":\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061wi8s8d5",
+        "name": "title",
+        "value": "{{schema:@VideoObject:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17420510950615ut34nl",
+        "name": "channel",
+        "value": "{{schema:@VideoObject:author}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061pdw0wmu",
+        "name": "published",
+        "value": "{{schema:@VideoObject:uploadDate|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420510950614wilnuf",
+        "name": "thumbnailUrl",
+        "value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1742149688466e0wzro6fv",
+        "name": "watched",
+        "value": "{{url|replace:\\\"embed/\\\":\\\"watch?v=\\\"|replace:\\\"/(.*)&(?:t|start)=([\\d]*)s$/g\\\":\\\"$2\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061mujtziu",
+        "name": "duration",
+        "value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742061979785n27redyih",
+        "name": "tags",
+        "value": "clippings, clippings/youtube, {{\\\"add tags related to the video - comma separated - no # in front either\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742062320309a794g009r",
+        "name": "genre",
+        "value": "{{schema:@VideoObject:genre}}",
+        "type": "text"
+      },
+      {
+        "id": "17421499815691szzaumx3",
+        "name": "percent_watched",
+        "value": "{{watched|calc:\\\"${duration}*100\\\"|round:0}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "noteNameFormat": "{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|safe_name|trim}}",
+    "path": "⬇️ Clippings/YouTube/{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|safe_name|trim}}",
+    "id": "1742151099535p038269ia",
+    "context": "Title: {{schema:@VideoObject:name}}\nChannel: {{schema:@VideoObject:author}}\nDuration: {{schema:@VideoObject:duration|replace:\"PT\",\"\",\"S\",\"\"}}\nWatched: {{url|replace:\"embed/\":\"watch?v=\"|replace:\"/(.*)&(?:t|start)=([\\d]*)s$/g\":\"$2\"}}\n\n{{selectorHtml:.ytd-transcript-segment-list-renderer|first|replace:\"&nbsp;\":\" \"|join|markdown|5000}}"
+  },
+  "template_1742151614619rp6upsulw": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube w/AI Summary (FOLDER NOTES) 2",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url|replace:\"embed/\":\"watch?v=\"|replace:\"/(.*)&(?:t|start)=([\\d]*)s$/g\":\"$1\"}})\n\n## About\n\ntype:: #type/video/youtube/new\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Summary\n\n{{\"summarize the video and don't add fluff or intro to your response\"}}\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n\n",
+    "properties": [
+      {
+        "id": "1742051095061zpb2l8t",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "174205109506150uvfsj",
+        "name": "url",
+        "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"|replace:\\\"/(.*)&(?:t|start)=([\\d]*)s$/g\\\":\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061wi8s8d5",
+        "name": "title",
+        "value": "{{schema:@VideoObject:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17420510950615ut34nl",
+        "name": "channel",
+        "value": "{{schema:@VideoObject:author}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061pdw0wmu",
+        "name": "published",
+        "value": "{{schema:@VideoObject:uploadDate|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420510950614wilnuf",
+        "name": "thumbnailUrl",
+        "value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1742149688466e0wzro6fv",
+        "name": "watched",
+        "value": "{{url|replace:\\\"embed/\\\":\\\"watch?v=\\\"|replace:\\\"/(.*)&(?:t|start)=([\\d]*)s$/g\\\":\\\"$2\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061mujtziu",
+        "name": "duration",
+        "value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742061979785n27redyih",
+        "name": "tags",
+        "value": "clippings, clippings/youtube, {{\\\"add tags related to the video - comma separated - no # in front either\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742062320309a794g009r",
+        "name": "genre",
+        "value": "{{schema:@VideoObject:genre}}",
+        "type": "text"
+      },
+      {
+        "id": "17421499815691szzaumx3",
+        "name": "percent_watched",
+        "value": "{{watched|calc:\\\"${duration}*100\\\"|round:0}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "noteNameFormat": "{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|replace:\"|\":\"-\"|safe_name|trim}}",
+    "path": "⬇️ Clippings/YouTube/{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|replace:\"|\":\"-\"|safe_name|trim}}",
+    "id": "1742151614619rp6upsulw",
+    "context": "Title: {{schema:@VideoObject:name}}\nChannel: {{schema:@VideoObject:author}}\nDuration: {{schema:@VideoObject:duration|replace:\"PT\",\"\",\"S\",\"\"}}\nWatched: {{url|replace:\"embed/\":\"watch?v=\"|replace:\"/(.*)&(?:t|start)=([\\d]*)s$/g\":\"$2\"}}\n\n{{selectorHtml:.ytd-transcript-segment-list-renderer|first|replace:\"&nbsp;\":\" \"|join|markdown|5000}}"
+  },
+  "template_1742151943214481aiokeb": {
+    "id": "1742151943214481aiokeb",
+    "name": "IDEA - wikilink or nested tag to people",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{content}}",
+    "properties": [],
+    "triggers": [],
+    "context": ""
+  },
+  "template_17421598920326a2sdn7gd": {
+    "schemaVersion": "0.1.0",
+    "name": "YouTube w/AI Summary (FOLDER NOTES)(SMART NOTE TITLE) 2",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url|replace:\"embed/\":\"watch?v=\"|replace:\"/(.*)&(?:t|start)=([\\d]*)s$/g\":\"$1\"}})\n\n## Summary\n\n{{\"summarize the video and don't add fluff or intro to your response\"}}\n\n## Description\n\n{{schema:@VideoObject:description|replace:\"(.*)\\n\\n[\\s\\S]*\":\"$1\"|replace:\"/(?:\\s*)(Subscribe|Follow me|sponsor).*\\n?/gmi\",\"\"}}\n\n",
+    "properties": [
+      {
+        "id": "1742051095061zpb2l8t",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "174205109506150uvfsj",
+        "name": "url",
+        "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"|replace:\\\"/(.*)&(?:t|start)=([\\d]*)s$/g\\\":\\\"\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061wi8s8d5",
+        "name": "title",
+        "value": "{{schema:@VideoObject:name}}",
+        "type": "text"
+      },
+      {
+        "id": "17421574357933lpx61wtn",
+        "name": "rating",
+        "value": "",
+        "type": "number"
+      },
+      {
+        "id": "1742157439701ne4ch7rgv",
+        "name": "interest",
+        "value": "",
+        "type": "number"
+      },
+      {
+        "id": "17420510950615ut34nl",
+        "name": "channel",
+        "value": "{{schema:@VideoObject:author}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061pdw0wmu",
+        "name": "published",
+        "value": "{{schema:@VideoObject:uploadDate|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420510950614wilnuf",
+        "name": "thumbnailUrl",
+        "value": "{{schema:@VideoObject:thumbnailUrl|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1742051095061mujtziu",
+        "name": "duration",
+        "value": "{{schema:@VideoObject:duration|replace:\\\"PT\\\",\\\"\\\",\\\"S\\\",\\\"\\\"|duration:\\\"H:mm:ss\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742061979785n27redyih",
+        "name": "tags",
+        "value": "clippings, clippings/youtube, {{\\\"add tags related to the video - comma separated - no spaces but dashes are fine - no # in front of tags - they can also be nested portions of an ontology with forward slashes\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742062320309a794g009r",
+        "name": "genre",
+        "value": "{{schema:@VideoObject:genre}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://www.youtube.com/watch?v="
+    ],
+    "noteNameFormat": "{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|replace:\"|\":\"-\"|safe_name|trim|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "path": "⬇️ Clippings/YouTube/{{schema:@VideoObject:author|safe_name|trim}} - {{schema:@VideoObject:name|replace:\"|\":\"-\"|safe_name|trim|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "id": "17421598920326a2sdn7gd",
+    "context": "# YouTube Video\nTitle: {{schema:@VideoObject:name}}\nChannel: {{schema:@VideoObject:author}}\nPublished: {{schema:@VideoObject:uploadDate|date:\"dddd, MMMM Do YYYY, h:mm a\"}}\nDuration: {{schema:@VideoObject:duration|replace:\"PT\",\"\",\"S\",\"\"|duration:\"H:mm:ss\"}}\nGenre: {{schema:@VideoObject:genre}}\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Transcript\n\n{{selectorHtml:.ytd-transcript-segment-list-renderer|first|replace:\"&nbsp;\":\" \"|join|markdown|3000}}"
+  },
+  "template_1742235091132nvxymlrq9": {
+    "schemaVersion": "0.1.0",
+    "name": "ChatGPT (FOLDER NOTES)(AI DESC SUMMARY)",
+    "behavior": "create",
+    "noteContentFormat": "{{selectorHtml:article[data-testid*=\"conversation-turn\"]|replace:\"/<svg.*?svg>/g\":\"\"|join:\"\"|remove_html:(\".text-token-text-secondary,.text-token-text-tertiary\")|markdown|replace:\"/##### You said\\:\\s*/g\": \"# User: \\n\\n\"}}",
+    "properties": [
+      {
+        "id": "1742059527634gp4rsopo9",
+        "name": "description",
+        "value": "{{\\\"summarize what's being talked about in this AI chat in a sentence\\\"}}",
+        "type": "text"
+      },
+      {
+        "id": "1742059598794zvxo78u9u",
+        "name": "author",
+        "value": "ChatGPT, Cybersader",
+        "type": "multitext"
+      },
+      {
+        "id": "1742054104449ac67sjr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420596768731wn4j35zs",
+        "name": "domain",
+        "value": "{{domain}}",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449bybmc3e",
+        "name": "source",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449ett5z70",
+        "name": "tags",
+        "value": "clippings, clippings/chatgpt",
+        "type": "multitext"
+      },
+      {
+        "id": "1742059660332grl47pbkw",
+        "name": "title",
+        "value": "{{selector:title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742234347804pwi2qbnjh",
+        "name": "ai_model",
+        "value": "{{selector:#radix-\\:ru0\\: > div.text-token-text-secondary}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [
+      "https://chatgpt.com/share",
+      "https://chatgpt.com/"
+    ],
+    "noteNameFormat": "{{selector:title|safe_name}}",
+    "path": "⬇️ Clippings/ChatGPT/{{selector:title|safe_name}}",
+    "id": "1742235091132nvxymlrq9",
+    "context": "# {{selector:title}}\n\n{{selectorHtml:article[data-testid*=\"conversation-turn\"]|replace:\"/<svg.*?svg>/g\":\"\"|join:\"\"|remove_html:(\".text-token-text-secondary,.text-token-text-tertiary\")|markdown|replace:\"/##### You said\\:\\s*/g\": \"# User: \\n\\n\"|trim:4000}}"
+  },
+  "template_1742245125748rj4yb2zz9": {
+    "id": "1742245125748rj4yb2zz9",
+    "name": "Articles, Blogs (FOLDER NOTES)",
+    "behavior": "create",
+    "noteNameFormat": "{{title|safe_name:windows}}",
+    "path": "⬇️ Clippings/Articles, Blogs/{{title|safe_name:windows}}",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{content|replace:\"!\\[.*?\\]\\(.*?\\)\",\"\"}}",
+    "properties": [
+      {
+        "id": "1742248098926p3y4h7uue",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742248085226vfkx4vfpa",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742233980403oma0uv77a",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "174223402509923g3fkeod",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742245222496m6nkmz965",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742234009121vsyj1kdcm",
+        "name": "tags",
+        "value": "clippings, clippings/articles_and_blogs,{{\\\"add tags related to the video. Use a comma-separated list like `tag1, tag2, tag3`. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like `parent/child`\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"|replace:\\\"/tag:/gm\\\":\\\"\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1742245045079ciwqm7at8",
+        "name": "domain",
+        "value": "{{domain}}",
+        "type": "text"
+      },
+      {
+        "id": "1742245049294vda1xv0xd",
+        "name": "url",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "1742247490941rq7rhmp2t",
+        "name": "author",
+        "value": "{{author}}",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://techcrunch.com/",
+      "https://medium.com/"
+    ],
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_1742247682581mcw94p4rk": {
+    "id": "1742247682581mcw94p4rk",
+    "name": " News (FOLDER NOTES)(NO IMAGES)(AI TITLE)",
+    "behavior": "create",
+    "noteNameFormat": "{{\"Pick a good note or .md file title. Be precise and SHORT, no special characters and capitalized\"|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|title}}",
+    "path": "⬇️ Clippings/News/{{\"Pick a good note or .md file title. Be precise and SHORT, no special characters and capitalized\"|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|title}}",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{content|replace:\"/!\\[.*?\\]\\(.*?\\)/gm\",\"\"}}",
+    "properties": [
+      {
+        "id": "1742248139676b6aqe04f0",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742248068377df1u7842o",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742233980403oma0uv77a",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1742247451386olyf0g8tt",
+        "name": "author",
+        "value": "{{author}}",
+        "type": "multitext"
+      },
+      {
+        "id": "174223402509923g3fkeod",
+        "name": "date created",
+        "value": "{{time|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742245242216p9x3xujg4",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1742234009121vsyj1kdcm",
+        "name": "tags",
+        "value": "-clippings, -clippings/news",
+        "type": "multitext"
+      },
+      {
+        "id": "1742245045079ciwqm7at8",
+        "name": "domain",
+        "value": "{{domain}}",
+        "type": "text"
+      },
+      {
+        "id": "1742245049294vda1xv0xd",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "context": "{{title}}\n{{description}}\n{{content|trim:4000}}"
+  },
+  "template_1742433584394u6qmuo5hf": {
+    "schemaVersion": "0.1.0",
+    "name": "Tech Inbox (FOLDER NOTES)(TITLE)",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{\"summarize this page's content in a clean markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description. Don't include images.  Communicate all of the content in an efficient and not-too-concise manner.  Include markdown headings to break things down.\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings, clippings/tech,{{\\\"add tags related to the video. Use a comma-separated list like `tag1, tag2, tag3`. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like `parent/child`\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"|replace:\\\"/tag:/gm\\\":\\\"\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420640382385scbwgqe2",
+        "name": "favicon",
+        "value": "{{favicon}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{title|replace:\"|\":\"-\"|safe_name|trim|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "path": "⬇️ Clippings/Tech/{{title|replace:\"|\":\"-\"|safe_name|trim|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "id": "1742433584394u6qmuo5hf",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,4000}}"
+  },
+  "template_1742865466907wd0kn5tog": {
+    "schemaVersion": "0.1.0",
+    "name": "Websites (FOLDER NOTES)",
+    "behavior": "create",
+    "noteContentFormat": "> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{\"summarize this page's content in a clean markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description. Don't include images.  Communicate all of the content in an efficient and not-too-concise manner.  Include markdown headings to break things down.\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings, clippings/websites,{{\\\"add tags related to the video. Use a comma-separated list like `tag1, tag2, tag3`. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like `parent/child`\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"|replace:\\\"/tag:/gm\\\":\\\"\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "17420640382385scbwgqe2",
+        "name": "favicon",
+        "value": "{{favicon}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{\"Pick a good note or .md file title (title of the tech) based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized\"trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize}}",
+    "path": "⬇️ Clippings/Websites/{{\"Pick a good note or .md file title (title of the tech) based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized.  Same as other one too\"|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize}}",
+    "id": "1742865466907wd0kn5tog",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_1745161603035s0wfokryr": {
+    "schemaVersion": "0.1.0",
+    "name": "EXAMPLE - TAG HANDLING",
+    "behavior": "create",
+    "noteContentFormat": "{{\"add tags related to the content. Use a comma-separated list like 'tag1, tag2, tag3'. Tags can't have spaces in the name - use underscores or snake case instead of spaces. Use nested tags for ontologies like 'parent/child'.\"|replace:\"/\\, /gm\":\",\"|split:\",\"|map:item=>item|snake|join:\",\"}}\n\n> [{{domain}} > {{title|replace:(\"/\\,.*/gm\":\"\")|trim}}]({{url}})\n{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n{{\"summarize this page's content in a clean markdown format with no intros.  Needs to read professionally and not like AI wrote it or answered a question.  As if summarizing for purposes of indexing it. Be thorough and structure the summary. Put newlines before and after headings. If the content is empty, then leave that out and just use the description. Don't include images.  Communicate all of the content in an efficient and not-too-concise manner.  Include markdown headings to break things down.\"}}",
+    "properties": [
+      {
+        "id": "1741742592088h9op9vz",
+        "name": "title",
+        "value": "{{title}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tttx57l",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17417425920889v285ks",
+        "name": "published",
+        "value": "{{published|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "174174259208856ocwqr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "1741742592088nw8m70m",
+        "name": "description",
+        "value": "{{description}}",
+        "type": "text"
+      },
+      {
+        "id": "1741742592088tbdzkbc",
+        "name": "tags",
+        "value": "clippings, clippings/tech",
+        "type": "multitext"
+      },
+      {
+        "id": "17420640382385scbwgqe2",
+        "name": "favicon",
+        "value": "{{favicon}}",
+        "type": "text"
+      }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{\"Pick a good note or .md file title (title of the tech) based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized\"trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "path": "⬇️ Clippings/Tech/{{\"Pick a good note or .md file title (title of the tech) based on the URL and Title that is short and unique to the company - be precise and SHORT, no special characters and capitalized.  Same as other one too\"|trim|split:\"https://\"|split:\"www.\"|split:\".\"|nth:1|join:\"\"|safe_name:windows|replace:\",\":\"\"|capitalize|replace:\"/(\\s*-\\s*)(?=.{41})[\\s\\S]*$/g\":\"\"|replace:\"/(\\s*-\\s*)(?=.{20})[\\s\\S]*$/g\":\"\"}}",
+    "id": "1745161603035s0wfokryr",
+    "context": "{{url}}\n{{title}}\n\n{{fullHtml|strip_tags:(\"script,h1,h2,h3,h4,h5,h6,meta,a,ol,ul,li,p,em,strong,i,b,img,video,audio,math,tablecite,strong,td,th,tr,caption,u\")|strip_attr:(\"alt,src,href,id,content,property,name,datetime,title\")|slice:0,3000}}"
+  },
+  "template_1746287878753kk6l0bh": {
+    "schemaVersion": "0.1.0",
+    "name": "GitHub Repository",
+    "behavior": "create",
+    "noteContentFormat": "{{highlights | map: item => ({text: item.text})  | template:\"- ${text}\" | join:\"\\n\"| blockquote|replace:\"/^(?!>\\s*\\[!note\\]-\\s*Highlights)(.*)/m\":\"\\n> [!note]- Highlights\\n$1\"|replace:\"/^([\\S\\s\\n]*)$/\":\"$1\\n\"||replace:\"/^(?!.*>\\s*-\\s*\\S).*$/s\":\"\"}}\n## README\n\n{{selectorHtml:article|markdown|replace:\"!\\[([^\\]]*)\\]\\(([^)]+)\\)\":\"![$1|100]($2)\"}}\n\n",
+    "properties": [
+      {
+        "id": "1746287878755t6xmi4y",
+        "name": "title",
+        "value": "{{title|split:\\\"/\\\"|nth:2|first|split:\\\":\\\"|first|trim}}",
+        "type": "text"
+      },
+      {
+        "id": "1746287878755mu6mjna",
+        "name": "owner",
+        "value": "{{title|split:\\\"/\\\"|first|trim}}",
+        "type": "text"
+      },
+      {
+        "id": "1746287878755nwwid1z",
+        "name": "source",
+        "value": "{{url}}",
+        "type": "text"
+      },
+      {
+        "id": "17462878787556gcpgs9",
+        "name": "website",
+        "value": "{{selector:.Layout-sidebar a?href|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1746287878755o7ay1la",
+        "name": "description",
+        "value": "{{meta:name:description}}",
+        "type": "text"
+      },
+      {
+        "id": "1746287878755o6haxzq",
+        "name": "stars",
+        "value": "{{selector:#repo-stars-counter-star?title}}",
+        "type": "number"
+      },
+      {
+        "id": "1746287878755bis1crg",
+        "name": "tags",
+        "value": "clippings, clippings/github, {{selector:div.my-3 div.f6 a.topic-tag|join:\\\", \\\"|replace:\\\"/-/g\\\":\\\"_\\\"|lower}}, {{\\\"add tags related to the video & Use a comma-separated list like tag1, tag2, tag3 & Tags cant have spaces in the name - use underscores or snake case instead of spaces Use nested tags for ontologies like parent/child\\\"|replace:\\\"/\\, /gm\\\":\\\",\\\"|split:\\\",\\\"|map:item=>item|snake|join:\\\",\\\"|replace:\\\"/tag:/gm\\\":\\\"\\\"}}",
+        "type": "multitext"
+      },
+      {
+        "id": "1746287878755s58gpp2",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      }
+    ],
+    "triggers": [
+      "https://github.com/"
+    ],
+    "noteNameFormat": "{{title|split:\"/\"|nth:2|first|split:\":\"|first|trim}}",
+    "path": "⬇️ Clippings/GitHub Repos/{{title|split:\"/\"|first|trim}}/{{title|split:\"/\"|nth:2|first|split:\":\"|first|trim}}",
+    "id": "1746287878753kk6l0bh",
+    "context": "{{url}}\n{{title}}\nTags: {{selector:div.my-3 div.f6 a.topic-tag|join:\", \"|replace:\"/-/g\":\"_\"|lower}}\n\n{{selectorHtml:article|markdown|slice:0,2000}}"
+  },
+  "template_1747413469526np16r7jto": {
+    "schemaVersion": "0.1.0",
+    "name": "ChatGPT (Citation Extractor)",
+    "behavior": "create",
+    "noteContentFormat": "{{selectorHtml:div.flex.flex-col.px-3.py-2 > div[style*=\"opacity: 1;\"] > a | remove_attr:(\"class,style,target,rel\")| remove_tags:(\"img,svg,path\")| join |join | replace:\"/<a href=\"([^\"]+)[^>]*>.*?<div[^>]*>([^<]+)<\\/div>.*?<div[^>]*>([^<]+)<\\/div>.*?<div[^>]*>([^<]+)<\\/div>.*?<\\/a>\\,?/gm\":\"- [$2 > $3]($1) — $4\\n\"}}",
+    "properties": [
+      {
+        "id": "1742059660332grl47pbkw",
+        "name": "title",
+        "value": "{{selector:title}}",
+        "type": "text"
+      },
+      {
+        "id": "1742248188509ojvb09so6",
+        "name": "aliases",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449ac67sjr",
+        "name": "date created",
+        "value": "{{date|date:\\\"dddd, MMMM Do YYYY, h:mm a\\\"}}",
+        "type": "date"
+      },
+      {
+        "id": "17420596768731wn4j35zs",
+        "name": "domain",
+        "value": "{{domain}}",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449bybmc3e",
+        "name": "source",
+        "value": "",
+        "type": "text"
+      },
+      {
+        "id": "1742054104449ett5z70",
+        "name": "tags",
+        "value": "clippings, clippings/chatgpt",
+        "type": "multitext"
+      },
+      {
+        "id": "1742234347804pwi2qbnjh",
+        "name": "ai_model",
+        "value": "{{selector:button[data-testid=\\\"model-switcher-dropdown-button\\\"] > div.text-token-text-secondary|first}}",
+        "type": "text"
+      },
+      {
+        "id": "1742059598794zvxo78u9u",
+        "name": "author",
+        "value": "ChatGPT, Cybersader",
+        "type": "multitext"
+      }
+    ],
+    "triggers": [
+      "https://chatgpt.com/share",
+      "https://chatgpt.com/"
+    ],
+    "noteNameFormat": "{{selector:title|safe_name}}",
+    "path": "⬇️ Clippings/ChatGPT/{{selector:title|safe_name}}",
+    "id": "1747413469526np16r7jto",
+    "context": "# {{selector:title}}\n\n{{selectorHtml:article[data-testid*=\"conversation-turn\"]|replace:\"/<svg.*?svg>/g\":\"\" |join:\"\"|replace:\"/<h5 class=\\\"sr-only\\\">\\s*You said:\\s*<\\/h5>/g\":\"# User:\\n\\n\"|replace:\"/<h5 class=\\\"sr-only\\\">\\s*<\\/h5>/g\":\"# AI:\\n\\n\"|remove_html:(\".text-token-text-secondary,.text-token-text-tertiary\")|markdown|replace:\"/\\\\# User:/gm\":\"**User:**\"|replace:\"/\\\\# AI:/gm\":\"---\\n\\n**AI:**\"|slice:0,4000}}"
+  },
+  "template_list": [
+    "1741447200627fminttrkr",
+    "1742245125748rj4yb2zz9",
+    "1742060156107w6xacuef5",
+    "1742247682581mcw94p4rk",
+    "1742146396337utpay6e1p",
+    "17420535174966a1823ay9",
+    "1742060457529xyjdtri81",
+    "17420629678191tatl6yy2",
+    "17420510950552g0ill8",
+    "173782417371313sc30wwp",
+    "1747413469526np16r7jto",
+    "1742054104449ivnrnnh",
+    "1742865466907wd0kn5tog",
+    "1742059201694lp30nuc28",
+    "1742433584394u6qmuo5hf",
+    "1734364393307t0wsrpv3w",
+    "1742051403630gedfl87",
+    "1746287878753kk6l0bh",
+    "17420514272106my38an",
+    "1742051322023zrwz67s",
+    "1742051437592dlxn36q",
+    "17420514151895q3h5da",
+    "1732549804596vjn9wby4d",
+    "1742148354709hzzqz7j31",
+    "1742051310878myw53au",
+    "1742051380046qbpe00j",
+    "1745161603035s0wfokryr",
+    "1742235091132nvxymlrq9",
+    "17421598920326a2sdn7gd",
+    "1742151943214481aiokeb",
+    "17378401407639yg9hx22i",
+    "1742151614619rp6upsulw",
+    "173782428150749wwtow",
+    "1742051364898q3xbtqz",
+    "1742051352314t21en2o",
+    "1742051335387fifc653",
+    "1742151099535p038269ia",
+    "17420485584616at75j8zt",
+    "1741742592087u9990j0",
+    "174174429908271jerm6ro",
+    "1741827130824c40vk8ntu",
+    "1741830499556z83pz3u5g",
+    "1741830503705nf00tgs7s",
+    "174214897098369c8oe7ob"
+  ],
+  "vaults": []
+}

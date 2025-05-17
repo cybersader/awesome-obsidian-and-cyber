@@ -108,6 +108,7 @@
   />
 </a> - current tasks, ideas, etc.
 
+
 <ins>Using Projects board:</ins>
 - Type at bottom
 - Use `Ctrl + ENTER` to make a draft
