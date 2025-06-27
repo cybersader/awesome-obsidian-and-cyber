@@ -147,6 +147,7 @@
 
 - Test risks of Obsidian application - penetration testing, exploitation
 - Fix SMB share and other problems by implementing CRDT-based reconciler for file system like OneNote uses.  Conflict handling for multiple user situations like corporate without needing to go to a block-baswd system like Notion
+	- This would also apply to using Obsidian in a browser (Obsidian in the web) - more on that topic below
 - User management layer on-top of browser-based Obsidian (linuxserver container like what KASM workspaces uses).  This would make Enterprise use with Obsidian possible (collaboration and accessibility with security)
 
 </details>
@@ -261,7 +262,8 @@
 
 > these are relevant to corporate and to threat model the system
 
-- Browser-based Obsidian
+- Browser-based Obsidian (Web-based Obsidian?)
+	- I posted an answer on this subject on the [Obsidian forum](https://forum.obsidian.md/t/obsidian-for-web/2049/250?u=cybersader)
 - Collaboration in Obsidian
 - Plugin risks and security
 - Securing Obsidian Application (network)
